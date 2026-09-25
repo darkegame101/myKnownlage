@@ -1,10 +1,10 @@
-# Source Processing Rules & Protocol
+# Source Processing & Knowledge Base Expansion Protocol
 
-Standard Operating Procedure (SOP) for processing any new learning source (Course, Documentation, GitHub repository, YouTube playlist, Book, Lab, or Project) before updating the Knowledge Base.
+Standard Operating Procedure (SOP) for processing any new learning source (Course, Documentation, GitHub repository, YouTube playlist, Book, Lab, or Project) and expanding the Knowledge Base when encountering new knowledge outside the existing framework.
 
 ---
 
-## 📌 9-Step Processing Pipeline
+## 📌 9-Step Source Processing Pipeline
 
 ```mermaid
 graph TD
@@ -57,7 +57,7 @@ Classify content into:
 - `MISSING`: Source exposes a related gap in current Knowledge Base.
 
 ### Step 5 — Source $\rightarrow$ Knowledge Mapping
-Link Source ID to specific Topic files in `01-programming/`, `02-dsa/`, `03-databases/`, `04-operating-systems/`, `05-networking/`, `06-devops-tools/`. Update existing topic files or create new ones if strictly necessary.
+Link Source ID to specific Topic files in `01-programming/`, `02-dsa/`, `03-databases/`, `04-operating-systems/`, `05-networking/`, `06-devops-tools/`, or newly expanded domain directories. Update existing topic files or create new ones if strictly necessary.
 
 ### Step 6 — Knowledge $\rightarrow$ Source Mapping
 In every affected Topic file, add the Source ID (`SRC-XXX`) under `## Sources & Knowledge Traceability` to maintain bidirectional mapping:
@@ -96,4 +96,60 @@ Knowledge Gaps: ...
 Prerequisite Gaps: ...
 Files Updated: ...
 Recommended Next: ...
+```
+
+---
+
+## 🏗️ Handling Knowledge Outside Existing Framework (Knowledge Base Expansion)
+
+The Knowledge Base must be extensible and reflect what the user actually learns rather than initial structural assumptions.
+
+```text
+New Knowledge
+     ↓
+Verify Existence
+     ↓
+Classify (EXISTING / DEEPER / PRACTICAL / NEW)
+     ↓
+Place in Existing Subdomain / Topic
+     ↓
+OR Create New Topic in Existing Domain
+     ↓
+OR Create New Domain (e.g., 07-ai/)
+     ↓
+Update Source Mapping (learning-sources.md)
+     ↓
+Update Skill Matrix & Gap Analysis
+     ↓
+Update Roadmap & Dashboard System
+     ↓
+Generate Knowledge Expansion Report
+```
+
+### Expansion Rules & Protocols
+
+1. **Verify Existence First**: Check `knowledge-map.md`, existing topics, domain directories, `skill-matrix.md`, and `learning-sources.md` before creating new structures.
+2. **Expand Within Existing Subdomains**: If new knowledge belongs to an existing domain (e.g. `gRPC` inside `Backend`), create subtopic files within that domain directory rather than introducing unnecessary top-level domains.
+3. **Expand Within Existing Domains**: If new knowledge does not fit existing topics but fits an existing domain (e.g. `Nginx` inside `06-devops-tools/`), create a new topic file (e.g. `06-devops-tools/nginx.md`).
+4. **Create New Domains Controlledly**: If new knowledge belongs to a completely new domain (e.g. Machine Learning, LLMs, Vector DBs), create a new numbered domain directory (e.g. `07-ai/`) and register it officially in `README.md` and `knowledge-map.md`.
+5. **Avoid Keyword-driven Folder Creation**: Mentioning a technology as a reference or prerequisite does NOT justify creating a new domain directory. Mark it as `Reference / Prerequisite`.
+6. **Record Knowledge Regardless of Current Roadmap Goals**: If new knowledge is outside current primary goals (e.g., Blockchain while focusing on Backend/DevOps), register the source and knowledge, assign `Learning Priority: Low / Optional`, and do not alter primary roadmap sequencing.
+7. **Distinguish Knowledge Existence vs Learning Priority**: Never delete recorded knowledge simply because it has low roadmap priority.
+8. **Dependency & Prerequisite Audit**: Audit prerequisite gaps for all new topics/domains. Learning a high-level concept does NOT imply prerequisites are mastered.
+9. **Systemic Consistency**: Synchronize all system files (`README.md`, `knowledge-map.md`, `skill-matrix.md`, `gap-analysis.md`, `learning-roadmap.md`, `learning-sources.md`) simultaneously whenever expanding structures.
+10. **Controlled Expansion, No Blanket Restructure**: Preserve existing folder structures and taxonomy. Prefer extending existing folders over massive renaming/relocating.
+11. **Knowledge Expansion Report Format**: Include a standard `## Knowledge Expansion` section in response reports:
+
+```text
+## Knowledge Expansion
+
+New Domain: <Domain Name>
+New Topic: <Topic Name>
+Why Created: <Rationale>
+Parent Domain: <Parent Domain>
+Related Existing Topics: <Topics>
+Prerequisites: <Prerequisites>
+Learning Priority: <High / Medium / Low / Optional>
+Files Created: <List of new files>
+Files Updated: <List of updated files>
 ```
