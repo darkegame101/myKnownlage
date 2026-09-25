@@ -54,3 +54,25 @@
 ## Recommended Follow-up
 1. Learn Connection Pooling with HikariCP.
 2. Master Spring Data JPA and Hibernate.
+
+## Lecture Index & Direct Lesson Links
+
+Main Course Page: [https://titv.vn/courses-page/lap-trinh-java-tuong-tac-csdl/](https://titv.vn/courses-page/lap-trinh-java-tuong-tac-csdl/)
+
+| # | Lecture / Lesson Title | Direct Lesson URL |
+| :---: | :--- | :--- |
+| 1 | JDBC 01. Giới thiệu khóa học lập trình Java tương tác với Cơ sở dữ liệu Video lesson | [Watch Lesson](https://titv.vn/courses-page/lap-trinh-java-tuong-tac-csdl/50313) |
+| 2 | JDBC 02. Ôn tập câu lệnh SQL Video lesson | [Watch Lesson](https://titv.vn/courses-page/lap-trinh-java-tuong-tac-csdl/50314) |
+| 3 | JDBC 03. Cách kết nối với cơ sở dữ liệu bằng JDBC Video lesson | [Watch Lesson](https://titv.vn/courses-page/lap-trinh-java-tuong-tac-csdl/50315) |
+| 4 | JDBC 04. Các bước sử dụng JDBC để tương tác Cơ sở dữ liệu Video lesson | [Watch Lesson](https://titv.vn/courses-page/lap-trinh-java-tuong-tac-csdl/50316) |
+| 5 | JDBC 05. Xây dựng các lớp Data Access Object cho các lớp model Video lesson | [Watch Lesson](https://titv.vn/courses-page/lap-trinh-java-tuong-tac-csdl/50317) |
+| 6 | JDBC 06. Sử dụng JDBC để thêm, xóa, cập nhật dữ liệu bằng câu lệnh INSERT, UPDATE, DELETE Video lesson | [Watch Lesson](https://titv.vn/courses-page/lap-trinh-java-tuong-tac-csdl/50318) |
+| 7 | JDBC 07. Sử dụng JDBC để truy vấn cơ sở dữ liệu với câu lệnh SELECT Video lesson | [Watch Lesson](https://titv.vn/courses-page/lap-trinh-java-tuong-tac-csdl/50319) |
+| 8 | JDBC 08. Nên sử dụng PreparedStatement thay thế cho Statement khi dùng JDBC để tương tác CSDL Video lesson | [Watch Lesson](https://titv.vn/courses-page/lap-trinh-java-tuong-tac-csdl/50320) |
+| 9 | JDBC 09. Ánh xạ kiểu dữ liệu giữa JDBC Type và Java Type Video lesson | [Watch Lesson](https://titv.vn/courses-page/lap-trinh-java-tuong-tac-csdl/50321) |
+| 10 | [Video] Thị giác máy tính - Computer ... | [Watch Lesson](https://titv.vn/courses-page/video-thi-giac-may-tinh-computer-vision) |
+| 11 | Cấu trúc dữ liệu và giải thuật Java | [Watch Lesson](https://titv.vn/courses-page/video-cau-truc-du-lieu-va-giai-thuat-java) |
+| 12 | [Video] Nguyên lý Hệ điều hành | [Watch Lesson](https://titv.vn/courses-page/he-dieu-hanh) |
+| 13 | [Video] SQL Server - Cơ bản và Nâng cao | [Watch Lesson](https://titv.vn/courses-page/sql-server) |
+| 14 | [Video] Lập trình mạng (sử dụng Java) | [Watch Lesson](https://titv.vn/courses-page/lap-trinh-mang-su-dung-java) |
+
