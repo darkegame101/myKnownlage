@@ -64,7 +64,7 @@
 **Knowledge $\rightarrow$ Source Mapping**:
 - **SRC-007** — Git và GitHub toàn tập (TITV) | URL: https://titv.vn/courses-page/git-va-github-toan-tap/ | Lessons 01-24 (Git CLI, Branching, Rebase, Conflicts, Reset/Revert, PRs)
 
-Master Sources Catalog: [`00-sources/learning-sources.md`](file:///e:/myKnownlage/00-sources/learning-sources.md)
+Master Sources Catalog: [`00-sources/learning-sources.md`](../00-sources/learning-sources.md)
 
 ## Weaknesses
 - Limited experience with GitHub Actions CI/CD workflows.

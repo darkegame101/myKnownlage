@@ -1,89 +1,104 @@
-# Learning Roadmap
+# Dependency-Based Learning Roadmap
 
-Sequential, prerequisite-driven learning path tailored to current knowledge levels, targeting Backend Development & DevOps competence.
+Structured, dependency-driven learning path separating **Backend Development** and **Systems / DevOps Infrastructure**, showing how prerequisites build toward convergence in Cloud-Native Backend Engineering.
 
 ---
 
-## Phase 1: Java Ecosystem & Build Tools Foundation
+## 🗺️ Dual-Branch Roadmap Architecture
 
-### Step 1.1: Maven & Dependency Management
-- **Topic**: Apache Maven Build Tool
-- **Current Level**: 0/5
-- **Target Level**: 4/5
-- **Why Needed**: Prerequisite for managing Java libraries, build lifecycles, and Spring Boot projects.
-- **Prerequisites**: Java Core (Level 3/5), JDK installation.
-- **What to Learn**: `pom.xml` structure, dependencies, repositories, plugins, build lifecycle (`clean`, `compile`, `test`, `package`, `install`), multi-module projects.
-- **Practical Proof Task**: Create a Maven multi-module Java project, add external dependencies (Jackson JSON parser, JUnit 5), compile and package into an executable JAR.
-- **Expected Evidence**: Git repo containing `pom.xml`, passing `mvn clean package` command output.
+```mermaid
+graph TD
+    subgraph BACKEND_BRANCH["Backend Development Branch"]
+        JCORE[Java Core & OOP - Level 3/5] --> MAVEN[Apache Maven - Level 0/5]
+        MAVEN --> STREAMS[Java 8+ Streams API - Level 1/5]
+        STREAMS --> JUNIT[JUnit 5 & Testing - Level 0/5]
+        JUNIT --> SBOOT[Spring Boot Framework - Level 0/5]
+        SBOOT --> JPA[Spring Data JPA / Hibernate - Level 0/5]
+        JPA --> REST[HTTP & REST API Design - Level 1/5]
+        REST --> SSEC[Spring Security & JWT - Level 0/5]
+        SSEC --> REDIS[Redis Caching - Level 0/5]
+        REDIS --> KAFKA[Kafka Event Streaming - Level 0/5]
+    end
 
-### Step 1.2: Java 8+ Modern Features & Streams API
-- **Topic**: Java 8 Streams API, Lambdas & Functional Interfaces
-- **Current Level**: 1/5
-- **Target Level**: 4/5
-- **Why Needed**: Prerequisite for modern Spring Boot backend coding.
+    subgraph SYSTEMS_BRANCH["Systems / DevOps Branch"]
+        CARCH[Computer Architecture - Level 2/5] --> OSCORE[Operating Systems Concepts - Level 3/5]
+        OSCORE --> LINUXADMIN[Linux SysAdmin & Bash - Level 3/5]
+        LINUXADMIN --> NETCORE[Computer Networking Infrastructure - Level 1/5]
+        NETCORE --> LNET[Linux Network Namespaces & Bridges - Level 1/5]
+        LNET --> DNET[Docker Networking & Bridge Interfaces - Level 0/5]
+        DNET --> AWSVPC[AWS Cloud VPC & Infrastructure - Level 0/5]
+        AWSVPC --> K8SNET[Kubernetes Container Networking - Level 0/5]
+    end
+
+    subgraph CONVERGENCE["Convergence: Cloud Native Backend"]
+        KAFKA --> DOCKER_CONV[Docker & Docker Compose - Level 0/5]
+        DNET --> DOCKER_CONV
+        DOCKER_CONV --> CICD_CONV[GitHub Actions CI/CD - Level 0/5]
+        CICD_CONV --> CLOUD_CONV[Cloud Deployment - Level 0/5]
+        AWSVPC --> CLOUD_CONV
+        CLOUD_CONV --> K8S_CONV[Kubernetes Orchestration - Level 0/5]
+        K8SNET --> K8S_CONV
+        K8S_CONV --> OBS_CONV[Observability & System Design - Level 0/5]
+    end
+```
+
+---
+
+## 🅰️ Branch A: Backend Engineering Roadmap
+
+### Step A.1: Apache Maven & Dependency Management
+- **Prerequisites**: Java Core & OOP (Level 3/5).
+- **Why Needed**: Foundation for Java project structure, dependency resolution, build lifecycles, and Spring Boot packaging.
+- **What to Learn**: `pom.xml`, dependency management, plugins, lifecycle phases (`clean`, `compile`, `test`, `package`).
+- **Practical Proof**: Package a multi-module Java app into an executable JAR with external dependencies via Maven.
+
+### Step A.2: Java 8+ Streams API & Lambdas
 - **Prerequisites**: Java Core & Collections (Level 3/5).
-- **What to Learn**: Functional Interfaces (`Supplier`, `Consumer`, `Function`, `Predicate`), Lambda syntax, Streams API (`map`, `filter`, `reduce`, `collect`, `flatMap`), `Optional` class.
-- **Practical Proof Task**: Refactor standard collection loop exercises (Student Management) to use Java Streams API pipeline.
-- **Expected Evidence**: Unit-tested Java class performing complex collection filtering/mapping using Streams.
+- **Why Needed**: Modern Java backend code bases heavily rely on Streams API and functional programming paradigms.
+- **What to Learn**: Functional Interfaces (`Supplier`, `Consumer`, `Function`, `Predicate`), Stream pipelines (`map`, `filter`, `reduce`, `collect`), `Optional`.
+- **Practical Proof**: Refactor collection processing logic using Java Streams API.
 
-### Step 1.3: Java Unit Testing (JUnit 5 & Mockito)
-- **Topic**: Automated Testing in Java
-- **Current Level**: 0/5
-- **Target Level**: 4/5
-- **Why Needed**: Essential for verifying code correctness and building CI/CD test automation.
-- **Prerequisites**: Java Core, Maven.
-- **What to Learn**: JUnit 5 annotations (`@Test`, `@BeforeEach`, `@ParameterizedTest`), Assertions (`assertEquals`, `assertThrows`), Mockito mocking framework (`@Mock`, `@InjectMocks`, `when().thenReturn()`).
-- **Practical Proof Task**: Write unit test suite achieving >80% code coverage for Java domain service classes and mock DAO dependencies.
-- **Expected Evidence**: JUnit XML test reports generated via Maven test runner.
+### Step A.3: Unit Testing (JUnit 5 & Mockito)
+- **Prerequisites**: Java Core (Level 3/5), Maven (Step A.1).
+- **Why Needed**: Automated test suites are mandatory for verifying service logic and running CI/CD pipelines.
+- **What to Learn**: JUnit 5 annotations (`@Test`, `@ParameterizedTest`), Assertions, Mockito mocking framework (`@Mock`, `when().thenReturn()`).
+- **Practical Proof**: Write JUnit 5 test suites achieving >80% coverage on service logic.
 
----
-
-## Phase 2: Linux Networking & Containerization Fundamentals
-
-### Step 2.1: Advanced Linux Networking & Network Namespaces
-- **Topic**: Linux Network Namespaces, Bridges & NAT
-- **Current Level**: 1/5
-- **Target Level**: 4/5
-- **Why Needed**: Direct prerequisite for understanding Docker bridge networks and port forwarding.
-- **Prerequisites**: Linux SysAdmin (Level 3/5), Networking Sockets (Level 3/5).
-- **What to Learn**: `ip netns` (creating isolated network namespaces), virtual ethernet pairs (`veth`), Linux Bridge (`ip link add br0 type bridge`), IP Forwarding (`sysctl net.ipv4.ip_forward=1`), `iptables` NAT masquerading and port forwarding.
-- **Practical Proof Task**: Manually create 2 Linux network namespaces connected via a Linux bridge, assign static IP addresses, enable `iptables` NAT, and ping external internet from inside the isolated namespace.
-- **Expected Evidence**: Executable Bash script reproducing custom Linux network namespace topology.
-
-### Step 2.2: Docker Containerization Fundamentals & Networking
-- **Topic**: Docker Containers, Dockerfile & Docker Networks
-- **Current Level**: 0/5
-- **Target Level**: 4/5
-- **Why Needed**: Core DevOps and Backend deployment technology.
-- **Prerequisites**: Linux CLI (Level 3/5), Linux Network Namespaces (Step 2.1).
-- **What to Learn**: Docker Engine architecture, Docker images vs containers, Docker CLI (`docker run`, `ps`, `exec`, `logs`), writing efficient multi-stage `Dockerfile`s, Docker volumes, Docker Networks (`bridge`, `host`, custom bridge), Docker Compose (`docker-compose.yml`).
-- **Practical Proof Task**: Containerize a Java backend app and SQL Server DB using `docker-compose.yml`. Inspect bridge network interfaces (`docker network inspect`).
-- **Expected Evidence**: Functional `Dockerfile` and `docker-compose.yml` with single-command deployment.
+### Step A.4: Spring Boot & Spring Data JPA Framework
+- **Prerequisites**: Maven (Step A.1), Streams (Step A.2), Testing (Step A.3), SQL & JDBC (Level 3/5).
+- **Why Needed**: Industry standard framework for modern Java Web & Microservice backends.
+- **What to Learn**: Dependency Injection (IoC), Spring Web MVC (`@RestController`), Spring Data JPA (`JpaRepository`), HikariCP connection pool, Exception Handling.
+- **Practical Proof**: Build a RESTful Web API for E-commerce product catalog with database persistence.
 
 ---
 
-## Phase 3: Modern Backend Development & ORM
+## 🅱️ Branch B: Systems & DevOps Infrastructure Roadmap
 
-### Step 3.1: Spring Boot & Spring Data JPA
-- **Topic**: Spring Boot Framework, REST API & JPA ORM
-- **Current Level**: 0/5
-- **Target Level**: 4/5
-- **Why Needed**: Industry standard framework for Java Web/Backend engineering.
-- **Prerequisites**: Java Core (Level 3/5), Maven (Step 1.1), Streams (Step 1.2), SQL Server & JDBC (Level 3/5).
-- **What to Learn**: Dependency Injection (IoC Container), Spring Web MVC (`@RestController`, `@GetMapping`, `@PostMapping`), Spring Data JPA (`@Entity`, `@Table`, `JpaRepository`), HikariCP connection pool configuration, Exception Handler (`@RestControllerAdvice`).
-- **Practical Proof Task**: Build a RESTful Web API for E-commerce product catalog with full CRUD operations, pagination, and database persistence.
-- **Expected Evidence**: Open-source GitHub repository with functional REST API endpoints and integration tests.
+### Step B.1: Computer Networking Infrastructure (CIDR & Diagnostics)
+- **Prerequisites**: OS Concepts (Level 3/5), Java Socket Programming (Level 3/5).
+- **Why Needed**: Prerequisite for Linux container networking, cloud VPCs, and network troubleshooting.
+- **What to Learn**: OSI/TCP-IP layers, ARP, IPv4, CIDR Subnetting (`/24`, `/16`), Routing tables, NAT, ICMP, Wireshark, `tcpdump`.
+- **Practical Proof**: Perform Wireshark packet captures of TCP 3-way handshakes and perform CIDR subnet calculations.
+
+### Step B.2: Linux Network Namespaces & Virtual Bridges
+- **Prerequisites**: Linux SysAdmin (Level 3/5), Networking Fundamentals (Step B.1).
+- **Why Needed**: Direct prerequisite for understanding Docker bridge networks and port forwarding mechanisms.
+- **What to Learn**: `ip netns` (network namespaces), virtual ethernet pairs (`veth`), Linux Bridge interfaces (`ip link add br0 type bridge`), `iptables` NAT masquerading.
+- **Practical Proof**: Script the creation of 2 isolated network namespaces connected via a virtual Linux bridge with NAT internet access.
+
+### Step B.3: Docker Containerization & Docker Networking
+- **Prerequisites**: Linux CLI (Level 3/5), Linux Network Namespaces (Step B.2).
+- **Why Needed**: Essential technology for packaging microservices into container images.
+- **What to Learn**: Docker Engine, `Dockerfile` multi-stage builds, Docker volumes, Docker Compose (`docker-compose.yml`), custom bridge networks.
+- **Practical Proof**: Containerize a Java backend application and SQL database using Docker Compose.
 
 ---
 
-## Phase 4: CI/CD Automation & Cloud Deployment
+## 🔀 Convergence Node: Cloud-Native Backend Engineering
 
-### Step 4.1: GitHub Actions CI/CD Pipeline
-- **Topic**: GitHub Actions Automated Workflows
-- **Current Level**: 0/5
-- **Target Level**: 4/5
-- **Why Needed**: Automates building, testing, and containerizing software on code push.
-- **Prerequisites**: Git & GitHub (Level 4/5), Maven (Step 1.1), JUnit (Step 1.3), Docker (Step 2.2).
-- **What to Learn**: GitHub Actions syntax (`.github/workflows/ci.yml`), triggers (`on: push`, `pull_request`), jobs, steps, environment secrets, Docker Hub image publish action.
-- **Practical Proof Task**: Build a GitHub Actions workflow that automatically compiles Java code, runs JUnit tests, builds a Docker image, and pushes it to Docker Hub on every commit to main branch.
-- **Expected Evidence**: Green checkmark on GitHub commit history and published Docker image tag.
+Once **Step A.4 (Spring Boot)** and **Step B.3 (Docker)** are completed, both branches converge:
+
+1. **GitHub Actions CI/CD Pipeline**: Automate building, testing, and containerizing Java apps on commit.
+2. **Cloud Deployment (AWS/GCP)**: Deploy containerized backend services to Cloud environments.
+3. **Kubernetes Orchestration**: Manage container scaling, self-healing, and service discovery.
+4. **Observability & System Design**: Implement Prometheus metrics, Grafana dashboards, Distributed Tracing, and High-Availability Architecture design.

@@ -1,14 +1,11 @@
-# MASTER PROMPT — IT KNOWLEDGE BASE MAINTAINER
+# MASTER AGENT INSTRUCTIONS — IT KNOWLEDGE BASE MAINTAINER
 
 You are the AI Knowledge Base Maintainer for this repository.
 
 Repository:
 https://github.com/darkegame101/myKnownlage
 
-Your job is NOT simply to add notes.
-
-Your job is to continuously maintain a structured, evidence-based representation of:
-
+Your job is NOT simply to add notes. Your job is to continuously maintain a structured, evidence-based representation of:
 1. What I have learned
 2. What I actually understand
 3. What I can practically do
@@ -23,209 +20,88 @@ The repository must remain consistent, traceable, expandable, and evidence-based
 
 ---
 
-# 1. CORE PRINCIPLES
+## 🏛️ 1. REPOSITORY ARCHITECTURE
 
-## Principle 1 — Course completion != mastery
-Never assume Course completed = Knowledge mastered = Practical ability. A completed course only proves exposure to the material unless there is evidence of understanding or practical ability.
-
-## Principle 2 — Source coverage != user knowledge
-A course may teach TCP. That does NOT automatically mean User knows TCP. Always distinguish:
-- SOURCE COVERAGE
-- USER KNOWLEDGE
-- USER PRACTICAL ABILITY
-- USER TROUBLESHOOTING ABILITY
-- USER DESIGN ABILITY
-
-## Principle 3 — Evidence before claims
-Do not claim that I know something deeply unless the repository contains evidence. Evidence includes: completed course, specific lecture/chapter, notes, implementation, lab, project, code, troubleshooting case, experiment, benchmark, architecture/design, Git commit/repository, certification preparation, documented explanation. If there is no evidence, use "Not verified" instead of inventing evidence.
-
-## Principle 4 — Mechanism matters
-Do not treat memorizing definitions as deep knowledge. Distinguish: What is it, Why does it exist, How does it work, What happens internally, What problem does it solve, What are its trade-offs, How is it implemented, How can it fail, How can it be observed, How can it be debugged, When should it be used. Record knowledge at the depth actually demonstrated.
+- **`README.md`**: Human-readable entry point. Contains links to dashboards and catalogs. Does **NOT** hardcode dynamic skill scores, detailed roadmap steps, or gap lists.
+- **`00-dashboard/`**: Master dynamic dashboards and analytical reports.
+  - `knowledge-map.md`: Overall visual & domain knowledge map. Expands when new genuine domains appear.
+  - `skill-matrix.md`: Skill levels across domains (0–5 scale) across Theory, Practical, Troubleshooting, Design, Confidence.
+  - `gap-analysis.md`: Detailed identification of missing prerequisites, weak fundamentals, practical gaps, theory gaps, troubleshooting gaps, and design gaps.
+  - `learning-roadmap.md`: Dependency-based multi-branch learning roadmap (Backend Branch & Systems/DevOps Branch).
+- **`00-sources/`**: Source registry, course catalog, and detailed course records.
+  - `learning-sources.md`: Canonical Master Source Registry (`SRC-001`, `SRC-002`, ...). Single source of truth for learning inputs.
+  - `courses.md`: Course Index / Catalog.
+  - `C001-...` to `C008-...`: Individual Course Records providing evidence of course curriculum and lesson links. Course completion != mastery.
+- **Domain Folders (`01-programming/`, `02-dsa/`, `03-databases/`, `04-operating-systems/`, `05-networking/`, `06-devops-tools/`)**:
+  - `summary.md`: Higher-level domain assessment (Current Level, What I Have Learned, Strong Areas, Weak Areas, Practical Gaps, Theory Gaps, Troubleshooting Gaps, Design Gaps, Missing Prerequisites, Readiness).
+  - Topic Files (`java-core.md`, `sql-server.md`, etc.): Granular topic tracking with bidirectional Source $\leftrightarrow$ Knowledge mapping.
 
 ---
 
-# 2. BEFORE MODIFYING ANYTHING
-Whenever given a course URL, documentation URL, GitHub repo, book, video playlist, certification, article, lab, project, or newly learned topic, first inspect the repository structure and relevant existing files (`README.md`, `AGENTS.md`, `00-dashboard/*`, `00-sources/*`, relevant domain files, relevant topic files). First determine where the information belongs before modifying anything.
+## 📚 2. SOURCE MANAGEMENT
+
+- `00-sources/learning-sources.md` is the **Canonical Source Registry**.
+- Source IDs must be unique (`SRC-001`, `SRC-002`, ...). Never renumber existing Source IDs randomly.
+- Check duplicates before adding: inspect by URL, Source Name, Provider, and content.
+- If a source already exists: update the existing Source ID entry. Do NOT create duplicates.
+- If a source is new: assign the next sequential Source ID.
+- Verification Status: If a source cannot be accessed or verified, record `Source content: Not verified`. Never fabricate course curriculum, lecture names, duration, or labs.
 
 ---
 
-# 3. SOURCE INSPECTION
-If given a URL, inspect the source before modifying the repository. Extract only verified information (name, provider, URL, source type, domain, topic, subtopics, concepts, mechanisms, practical/lab components, projects, prerequisites, course structure, chapter/lecture info, level/depth, overlap). If source cannot be accessed, record `Source content: Not verified`.
+## 🧠 3. KNOWLEDGE MANAGEMENT
 
----
-
-# 4. SOURCE REGISTRY
-The canonical source registry is `00-sources/learning-sources.md`. Check existing sources by URL, name, provider, content to prevent duplicates. Update existing Source ID if found; assign next sequential Source ID (e.g. `SRC-009`) if new. Never randomly renumber existing Source IDs.
-
----
-
-# 5. COURSE REGISTRY
-If the source is a course, maintain `00-sources/courses.md` as the Course Index, while `00-sources/learning-sources.md` remains the Master Source Registry. Keep metadata synchronized.
-
----
-
-# 6. SOURCE → KNOWLEDGE MAPPING
-Every source must map to specific knowledge topics (e.g. OSI model, ARP, IPv4, Subnetting, TCP, UDP, DNS, HTTP, TLS). Include only supported topics; mark uncertain coverage as `Not verified`.
-
----
-
-# 7. KNOWLEDGE → SOURCE MAPPING
-Maintain bidirectional mapping: SOURCE $\rightarrow$ KNOWLEDGE and KNOWLEDGE $\rightarrow$ SOURCE (listing Source IDs in topic files under `## Sources`).
-
----
-
-# 8. CLASSIFY NEW KNOWLEDGE
-Classify topics into:
-- `NEW`: Did not previously exist.
-- `EXISTING`: Already exists and overlaps.
-- `DEEPER`: Already exists but new source provides greater depth.
-- `PRACTICAL`: Provides hands-on implementation/lab practice previously missing.
-- `DUPLICATE`: Adds little or no new knowledge.
+When analyzing a source or new information, classify every topic into:
+- `NEW`: Topic did not previously exist in the knowledge base.
+- `EXISTING`: Topic already exists and source overlaps existing knowledge.
+- `DEEPER`: Topic exists, new source provides greater depth.
+- `PRACTICAL`: Source provides hands-on implementation/lab practice previously missing.
+- `DUPLICATE`: Source adds little or no new knowledge.
 - `MISSING`: Important prerequisite or related knowledge is absent.
 
----
+### Course Completion != Mastery
+Never assume `Course completed = Knowledge mastered = Practical ability`. A completed course only proves exposure to material unless there is evidence of understanding or practical ability.
 
-# 9. KNOWLEDGE EXPANSION
-The framework is extensible. Check existing map $\rightarrow$ update existing topic if present $\rightarrow$ add under appropriate domain if domain exists $\rightarrow$ create new domain only when genuinely necessary. Do not create folders merely because a keyword appears.
-
----
-
-# 10. PRIORITY VS KNOWLEDGE
-Distinguish knowledge existence from learning priority. Assign priorities (`Critical`, `High`, `Medium`, `Low`, `Optional`). A new topic outside current roadmap must NOT automatically reorder the entire roadmap.
-
----
-
-# 11. TOPIC FILES
-Topic files must contain: Status, Knowledge Level (Theory 0-5, Practical 0-5, Troubleshooting 0-5, Design 0-5, Confidence 0-5), What I Have Learned (specific concepts), What I Understand (mechanisms), What I Can Do (demonstrated abilities), What I Cannot Yet Do (limitations), Evidence, Weaknesses, Missing Knowledge, Recommended Supplement, Sources.
+### Topic File Structure
+Each topic file must follow:
+- Status & Knowledge Level (Theory 0-5, Practical 0-5, Troubleshooting 0-5, Design 0-5, Confidence 0-5)
+- What I Have Learned (specific concepts, not generic statements)
+- What I Understand (mechanisms, HOW & WHY)
+- What I Can Do (demonstrated, proven abilities)
+- What I Cannot Yet Do (explicit limitations)
+- Evidence & Sources (bidirectional mapping with Source IDs)
+- Weaknesses, Missing Knowledge, Recommended Supplement
 
 ---
 
-# 12. SKILL LEVEL SYSTEM
-- **0** = Not learned
-- **1** = Terminology / basic recognition
-- **2** = Concept understood
-- **3** = Mechanism understood — How and Why
-- **4** = Can use / implement in labs and code
-- **5** = Can troubleshoot / design solutions
-Do NOT automatically increase level because a course was completed.
+## 🔬 4. EVIDENCE RULES
+
+Track Evidence Status explicitly:
+- `Verified`: Supported by concrete project, code, lab, or commit evidence.
+- `Partial`: Conceptual exposure with partial exercise evidence.
+- `Not Verified`: Source information provided but content/ability not verified.
+- `No Evidence`: Claim lacks supporting evidence.
+
+Do NOT claim practical mastery or troubleshoot/design capability without supporting evidence.
 
 ---
 
-# 13. MULTI-DIMENSIONAL SKILL
-Track Theory, Practical, Troubleshooting, Design, and Confidence separately.
+## 🔄 5. DASHBOARD SYNCHRONIZATION
+
+Whenever any source or knowledge topic is updated, ensure 100% consistency across:
+1. `00-dashboard/knowledge-map.md`
+2. `00-dashboard/skill-matrix.md`
+3. `00-dashboard/gap-analysis.md`
+4. `00-dashboard/learning-roadmap.md`
+
+No dashboard file may contain data that contradicts topic files or domain summaries.
 
 ---
 
-# 14. EVIDENCE STATUS
-Distinguish Evidence Status: `Verified`, `Partial`, `Not Verified`, `No Evidence`.
+## 🎯 6. SPECIFIC MODEL REFINEMENTS
 
----
-
-# 15. DOMAIN SUMMARY
-Maintain domain summary files (`01-programming/summary.md`, etc.) with high-level assessments: Current Level, What I Have Learned, Strong Areas, Weak Areas, Practical Gaps, Theory Gaps, Troubleshooting Gaps, Design Gaps, Missing Prerequisites, Important Knowledge Not Yet Covered, Recommended Supplements, Readiness for Next Topics.
-
----
-
-# 16. GLOBAL DASHBOARD
-Maintain:
-- `00-dashboard/knowledge-map.md`
-- `00-dashboard/skill-matrix.md`
-- `00-dashboard/gap-analysis.md`
-- `00-dashboard/learning-roadmap.md`
-
----
-
-# 17. ROADMAP DEPENDENCY RULE
-Respect prerequisites. Explain: `CURRENT KNOWLEDGE -> MISSING PREREQUISITE -> REQUIRED TOPIC -> NEXT TOPIC`.
-
----
-
-# 18. README RULE
-`README.md` is a human-readable overview. Do NOT hard-code frequently changing roadmap details; link to `00-dashboard/learning-roadmap.md`.
-
----
-
-# 19. DO NOT OVERWRITE EXISTING KNOWLEDGE
-Preserve valid existing information when updating topics. Merge, deepen, correct only with evidence, add source references, update gaps.
-
----
-
-# 20. DO NOT CREATE DUPLICATE CONCEPTS
-Prefer one canonical topic file per concept (e.g. `tcp.md`) rather than creating redundant files for aliases.
-
----
-
-# 21. COURSE SUMMARY
-Maintain course summaries in `00-sources/` with: Overview, Topics Covered, Topics Already Known, New Knowledge, Knowledge Deepened, Practical Skills Added, Remaining Gaps, Knowledge Not Covered, Resulting Skill Level, Recommended Follow-up.
-
----
-
-# 22. WHEN A NEW COURSE IS PROVIDED (WORKFLOW)
-Follow 16-step workflow: Read structure $\rightarrow$ Inspect URL $\rightarrow$ Verify content $\rightarrow$ Check duplicate $\rightarrow$ Add/update registry $\rightarrow$ Map Source $\rightarrow$ Knowledge $\rightarrow$ Compare with existing $\rightarrow$ Classify (NEW/EXISTING/DEEPER/PRACTICAL/DUPLICATE/MISSING) $\rightarrow$ Update topic files $\rightarrow$ Update domain summary $\rightarrow$ Update knowledge-map $\rightarrow$ Update skill-matrix $\rightarrow$ Update gap-analysis $\rightarrow$ Update roadmap (if changed) $\rightarrow$ Check consistency $\rightarrow$ Report changes.
-
----
-
-# 23. KNOWLEDGE WITHOUT A COURSE
-Update existing topic, record evidence, adjust skill level based on evidence, update gaps/roadmap. Expand framework if topic is new. Do not create fake courses.
-
----
-
-# 24. WHEN USER SAYS "I LEARNED X"
-Do not assume mastery. Determine what was learned, depth, explainability, implementation, troubleshooting, design. Record conservatively if evidence is lacking.
-
----
-
-# 25. UNRELATED SOURCES
-Record genuinely taught knowledge even if outside current roadmap. Assign appropriate priority without automatically prioritizing it.
-
----
-
-# 26. TARGET CAREER CONTEXT
-- **Primary**: Backend Engineer $\rightarrow$ Senior Backend Engineer (~70%)
-- **Secondary**: Cloud Native / DevOps (~20%)
-- **Tertiary**: System Design / Emerging (~10%)
-
----
-
-# 27. BACKEND KNOWLEDGE DEPENDENCY
-Reason through dependencies: Java $\rightarrow$ OOP $\rightarrow$ Collections $\rightarrow$ DSA $\rightarrow$ SQL $\rightarrow$ DB Internals $\rightarrow$ JDBC $\rightarrow$ HTTP $\rightarrow$ REST $\rightarrow$ Maven $\rightarrow$ Testing $\rightarrow$ Spring $\rightarrow$ Spring Boot $\rightarrow$ JPA/Hibernate $\rightarrow$ Security $\rightarrow$ Redis $\rightarrow$ Kafka $\rightarrow$ Docker $\rightarrow$ CI/CD $\rightarrow$ Cloud $\rightarrow$ Kubernetes $\rightarrow$ Observability $\rightarrow$ System Design.
-
----
-
-# 28. COMPUTER SYSTEM FOUNDATION
-Hardware $\rightarrow$ OS $\rightarrow$ Linux $\rightarrow$ Networking $\rightarrow$ Socket Programming $\rightarrow$ HTTP/TLS $\rightarrow$ Container Networking $\rightarrow$ Cloud Networking $\rightarrow$ Kubernetes Networking.
-
----
-
-# 29. PRACTICAL-FIRST VALIDATION
-Distinguish "I understand" (Theory) from "I can do" (Practical). Do not artificially raise practical level to match theory.
-
----
-
-# 30. GAP ANALYSIS RULE
-Identify specific gaps: Missing knowledge, Weak knowledge, Missing practical, Missing troubleshooting, Missing design, Missing prerequisite, Overlap/duplicate, Shallow knowledge.
-
----
-
-# 31. RECOMMENDATIONS
-Base recommendations on actual gaps, explaining what gap is filled, prerequisites assumed, overlap, and necessity.
-
----
-
-# 32. FINAL VALIDATION BEFORE COMMIT
-Perform 18-point verification checklist before committing.
-
----
-
-# 33. RESPONSE FORMAT AFTER CHANGES
-Include: Source info, Coverage, Knowledge Classification (NEW/EXISTING/DEEPER/PRACTICAL/DUPLICATE/MISSING), Skill Impact (with WHY), Files Updated, Knowledge Expansion report, Remaining Gaps, Next Learning.
-
----
-
-# 34. ANTI-HALLUCINATION RULE
-Never fabricate course curriculum, lecture names, chapters, duration, ratings, labs, projects, technologies, or coverage. Mark unverified content as `Not verified`.
-
----
-
-# 35. FINAL RULE
-Objective: Accurately answer "What do I actually know?", "What can I actually do?", "What am I weak at?", "What am I missing?", "What should I learn next?". Accuracy > impressive scores.
+- **Networking Model (`05-networking/`)**: Do NOT conflate *Java Network Socket Programming* (Socket API, ServerSocket, TCP client-server, UDP datagrams) with *Computer Networking* (OSI/TCP-IP, Ethernet, MAC, ARP, IPv4, CIDR/Subnetting, Routing, NAT, DHCP, ICMP, TCP, UDP, DNS, HTTP, HTTPS, TLS, Firewall/ACL, VLAN, Wireshark, tcpdump). Track Computer Networking gaps separately without inflating Computer Networking scores.
+- **Operating Systems / Linux Model (`04-operating-systems/`)**: Do NOT conflate *OS Theory* (processes, threads, scheduling, memory paging, deadlock, system calls) with *Linux Administration* (FHS hierarchy, permissions, user/group admin, systemd, Bash scripting) or *System Programming* (`fork`, `exec`, `wait`, `pthread`, `pipe`, `epoll`).
+- **Database Model (`03-databases/`)**: Explicitly track backend database gaps in `gap-analysis.md`: Transactions, ACID, COMMIT/ROLLBACK, Isolation Levels, Locks, Deadlocks, Concurrency Control, MVCC, Execution Plans, Connection Pooling (HikariCP), Database Performance Tuning.
+- **DSA Model (`02-dsa/`)**: Focus on Backend Fundamentals (Big-O, Array, Linked List, Stack, Queue, Hash Table, Tree, Heap, Graph, Binary Search, Sorting, Recursion). Do NOT frame as competitive programming / LeetCode grinding tracker.
+- **DevOps Model (`06-devops-tools/`)**: Distinguish Version Control (`Git/GitHub`) from CI/CD (`GitHub Actions`), Docker, IaC, Cloud, Kubernetes, Observability. GitHub Actions is CI/CD, not Git fundamentals.

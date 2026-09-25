@@ -75,7 +75,7 @@
 - **SRC-008** — Hệ điều hành Linux LPI-1/2 (TITV) | URL: https://titv.vn/courses-page/video-he-djieu-hanh-linux-lpi-1-2/ | Lessons 01-55 (FHS, CLI, Permissions, Vim, Bash Scripting)
 - **SRC-005** — Nguyên lý hệ điều hành (TITV) | URL: https://titv.vn/courses-page/he-dieu-hanh/ | OS Kernel & System call architecture
 
-Master Sources Catalog: [`00-sources/learning-sources.md`](file:///e:/myKnownlage/00-sources/learning-sources.md)
+Master Sources Catalog: [`00-sources/learning-sources.md`](../00-sources/learning-sources.md)
 
 ## Weaknesses
 - Limited experience with advanced Linux networking (iptables, NAT, bridge networks, Network Namespaces).

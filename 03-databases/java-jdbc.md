@@ -53,7 +53,7 @@
 - **SRC-004** — Lập trình Java tương tác với Cơ sở dữ liệu (JDBC) (TITV) | URL: https://titv.vn/courses-page/lap-trinh-java-tuong-tac-csdl/ | Lessons 01-09 (Connection, PreparedStatement, DAO Pattern)
 - **SRC-003** — SQL Server (TITV) | URL: https://titv.vn/courses-page/sql-server/ | Relational query foundation
 
-Master Sources Catalog: [`00-sources/learning-sources.md`](file:///e:/myKnownlage/00-sources/learning-sources.md)
+Master Sources Catalog: [`00-sources/learning-sources.md`](../00-sources/learning-sources.md)
 
 ## Weaknesses
 - Manual JDBC connection handling without Connection Pool (HikariCP).

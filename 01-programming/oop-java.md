@@ -47,7 +47,7 @@
 **Knowledge $\rightarrow$ Source Mapping**:
 - **SRC-001** — Lập trình Java – Java Core (TITV) | URL: https://titv.vn/courses-page/lap-trinh-java-java-core/ | Lessons 28-48 (OOP Pillars, UML, Abstract, Interface)
 
-Master Sources Catalog: [`00-sources/learning-sources.md`](file:///e:/myKnownlage/00-sources/learning-sources.md)
+Master Sources Catalog: [`00-sources/learning-sources.md`](../00-sources/learning-sources.md)
 
 ## Weaknesses
 - Limited exposure to SOLID principles (Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, Dependency Inversion).

@@ -55,7 +55,7 @@
 **Knowledge $\rightarrow$ Source Mapping**:
 - **SRC-003** — SQL Server (Cơ bản và Nâng cao) (TITV) | URL: https://titv.vn/courses-page/sql-server/ | Lessons 01-47 (DQL, DDL, DML, CTE, Window Func, T-SQL)
 
-Master Sources Catalog: [`00-sources/learning-sources.md`](file:///e:/myKnownlage/00-sources/learning-sources.md)
+Master Sources Catalog: [`00-sources/learning-sources.md`](../00-sources/learning-sources.md)
 
 ## Weaknesses
 - Limited experience with database performance profiling under high concurrent write loads.

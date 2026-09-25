@@ -50,7 +50,7 @@
 - **SRC-001** — Lập trình Java – Java Core (TITV) | URL: https://titv.vn/courses-page/lap-trinh-java-java-core/ | Lessons 01-27a, 49-76, 77-104
 - **SRC-006** — Lập trình mạng sử dụng Java (TITV) | URL: https://titv.vn/courses-page/lap-trinh-mang-su-dung-java/ | Lessons 06-17 (Stream I/O & File management refresher)
 
-Master Sources Catalog: [`00-sources/learning-sources.md`](file:///e:/myKnownlage/00-sources/learning-sources.md)
+Master Sources Catalog: [`00-sources/learning-sources.md`](../00-sources/learning-sources.md)
 
 ## Weaknesses
 - Lack of hands-on experience with modern Java versions (Java 11/17/21 LTS features).

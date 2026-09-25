@@ -52,7 +52,7 @@
 **Knowledge $\rightarrow$ Source Mapping**:
 - **SRC-005** — Nguyên lý hệ điều hành (TITV) | URL: https://titv.vn/courses-page/he-dieu-hanh/ | Lessons 01-16 (System Calls, CPU Scheduling, Synchronization, Deadlock, Memory Paging)
 
-Master Sources Catalog: [`00-sources/learning-sources.md`](file:///e:/myKnownlage/00-sources/learning-sources.md)
+Master Sources Catalog: [`00-sources/learning-sources.md`](../00-sources/learning-sources.md)
 
 ## Weaknesses
 - Purely theoretical understanding of OS concepts without writing C kernel/system code.

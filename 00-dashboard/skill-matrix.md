@@ -1,6 +1,6 @@
 # Skill Matrix
 
-Detailed breakdown of capabilities categorized by level (0 to 5) across theoretical, practical, troubleshooting, and design dimensions.
+Detailed breakdown of capabilities categorized by level (0 to 5) across theoretical, practical, troubleshooting, design, and confidence dimensions.
 
 ## Scale Definition
 - **0 = Not Learned**: Never studied or no exposure.
@@ -12,34 +12,34 @@ Detailed breakdown of capabilities categorized by level (0 to 5) across theoreti
 
 ---
 
-## Detailed Skill Ratings
+## Multidimensional Skill Level Ratings
 
-| Skill / Domain | Overall | Theory | Practical | Troubleshooting | Design | Verified Evidence | Status / Notes |
-| :--- | :---: | :---: | :---: | :---: | :---: | :--- | :--- |
-| **Java Core Syntax & Loops** | 3/5 | 3/5 | 3/5 | 2/5 | 2/5 | Course lectures & exercises | Theory & exercise verified |
-| **Java Object-Oriented Programming** | 3/5 | 3/5 | 3/5 | 2/5 | 2/5 | Book/Movie/Student OOP exercises | Theory & exercise verified |
-| **Java Collections Framework** | 3/5 | 3/5 | 2/5 | 1/5 | 2/5 | Course exercises | Standard usage verified |
-| **Java File I/O & Serialization** | 3/5 | 3/5 | 2/5 | 1/5 | 2/5 | File copy & Object stream scripts | Theory & basic scripts verified |
-| **Java Swing GUI** | 3/5 | 3/5 | 3/5 | 2/5 | 2/5 | Student Manager Swing App | Practical app verified |
-| **Java 8+ Streams API & Lambdas** | 1/5 | 1/5 | 0/5 | 0/5 | 0/5 | Not covered in source | **GAP** - Needs learning |
-| **Maven / Gradle Build Tools** | 1/5 | 1/5 | 0/5 | 0/5 | 0/5 | Mentioned in titles only | **GAP** - Needs learning |
-| **Arrays & Singly Linked List (Java)**| 2/5 | 3/5 | 2/5 | 1/5 | 1/5 | Linked List Student Manager | Basic DS verified |
-| **Trees, Graphs & Advanced Sorting** | 0/5 | 0/5 | 0/5 | 0/5 | 0/5 | Not in syllabus | **GAP** - Needs learning |
-| **SQL Server Querying & Joins** | 3/5 | 3/5 | 3/5 | 2/5 | 2/5 | Course SQL exercises | Querying verified |
-| **SQL Subqueries, CTE & Window Func**| 3/5 | 3/5 | 3/5 | 2/5 | 2/5 | SQL practice queries | Practical queries verified |
-| **T-SQL Stored Procedures & Triggers**| 3/5 | 3/5 | 3/5 | 2/5 | 2/5 | T-SQL exercises | Scripting verified |
-| **Java JDBC & DAO Pattern** | 3/5 | 3/5 | 3/5 | 2/5 | 2/5 | Java DAO Model classes | Practical DAO verified |
-| **HikariCP & Database Connection Pool**| 0/5 | 1/5 | 0/5 | 0/5 | 0/5 | Not covered in JDBC source | **GAP** - Needs learning |
-| **JPA / Hibernate ORM Framework** | 0/5 | 0/5 | 0/5 | 0/5 | 0/5 | Not in course source | **GAP** - Needs learning |
-| **OS Core Principles (Process, CPU)**| 3/5 | 3/5 | 2/5 | 1/5 | 1/5 | Course theory lectures | Theory coverage verified |
-| **Linux Terminal CLI & Permissions** | 3/5 | 3/5 | 3/5 | 2/5 | 2/5 | Ubuntu VM & WSL setup | Practical Admin verified |
-| **Bash Shell Scripting** | 3/5 | 3/5 | 3/5 | 2/5 | 2/5 | Math & Array sorting scripts | Practical scripts verified |
-| **Linux Network Namespaces & Bridges**| 1/5 | 1/5 | 0/5 | 0/5 | 0/5 | Basic IP config only | **GAP** - Container Prereq |
-| **Java TCP & UDP Socket Programming**| 3/5 | 3/5 | 3/5 | 2/5 | 2/5 | Chat Room, Remote Desktop apps| Practical apps verified |
-| **Java Multicast & RMI** | 3/5 | 3/5 | 3/5 | 1/5 | 2/5 | Lightstick simulation app | Exercise verified |
-| **Network CIDR Subnetting & NAT** | 1/5 | 1/5 | 0/5 | 0/5 | 0/5 | Basic IP concept only | **GAP** - Docker Prereq |
-| **Wireshark Packet Analysis** | 1/5 | 1/5 | 0/5 | 0/5 | 0/5 | Not in course labs | **GAP** - Troubleshooting |
-| **Git Version Control CLI** | 4/5 | 4/5 | 4/5 | 3/5 | 3/5 | Branching, merging, rebasing labs| Practical mastery verified |
-| **GitHub Collaboration & PRs** | 4/5 | 4/5 | 4/5 | 3/5 | 3/5 | Fork, Clone, Push, PR workflow | Practical mastery verified |
-| **GitHub Actions CI/CD** | 0/5 | 0/5 | 0/5 | 0/5 | 0/5 | Not in source | **GAP** - DevOps Prereq |
-| **Docker & Containerization** | 0/5 | 0/5 | 0/5 | 0/5 | 0/5 | Not yet learned | **GAP** - Target Skill |
+| Skill / Domain Area | Overall | Theory | Practical | Troubleshooting | Design | Confidence | Evidence Status | Status / Notes |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :--- | :--- |
+| **Java Core Syntax & Control Flow** | **3/5** | 3/5 | 3/5 | 2/5 | 2/5 | Medium | Verified | Console exercises verified |
+| **Java OOP & UML Modeling** | **3/5** | 3/5 | 3/5 | 2/5 | 2/5 | High | Verified | Book/Movie/Student OOP exercises |
+| **Java Collections Framework** | **3/5** | 3/5 | 2/5 | 1/5 | 2/5 | Medium | Verified | Standard Collections usage |
+| **Java File I/O & Serialization** | **3/5** | 3/5 | 2/5 | 1/5 | 2/5 | Medium | Verified | Text & Object file scripts |
+| **Java Swing GUI (MVC)** | **3/5** | 3/5 | 3/5 | 2/5 | 2/5 | High | Verified | Student Manager Swing App |
+| **Java 8+ Streams API & Lambdas** | **1/5** | 1/5 | 0/5 | 0/5 | 0/5 | Low | No Evidence | **GAP** — Backend Prerequisite |
+| **Apache Maven Build Tool** | **1/5** | 1/5 | 0/5 | 0/5 | 0/5 | Low | No Evidence | **GAP** — Backend Prerequisite |
+| **JUnit 5 & Mockito Unit Testing** | **0/5** | 0/5 | 0/5 | 0/5 | 0/5 | Low | No Evidence | **GAP** — Backend Prerequisite |
+| **Arrays & Singly Linked List (DSA)**| **2/5** | 3/5 | 2/5 | 1/5 | 1/5 | Medium | Verified | Custom Linked List Student Manager |
+| **Trees, Graphs & Advanced Sorting** | **0/5** | 0/5 | 0/5 | 0/5 | 0/5 | Low | No Evidence | **GAP** — CS Fundamentals |
+| **SQL Server Querying & Joins** | **3/5** | 3/5 | 3/5 | 2/5 | 2/5 | High | Verified | Multi-table JOIN queries |
+| **SQL Subqueries, CTE & Window Func**| **3/5** | 3/5 | 3/5 | 2/5 | 2/5 | High | Verified | Complex SQL practice queries |
+| **T-SQL Stored Procedures & Triggers**| **3/5** | 3/5 | 3/5 | 2/5 | 2/5 | High | Verified | T-SQL Stored Procedures & Triggers |
+| **Java JDBC & DAO Pattern** | **3/5** | 3/5 | 3/5 | 2/5 | 2/5 | High | Verified | Java DAO Model classes |
+| **Database Concurrency & ACID** | **1/5** | 2/5 | 1/5 | 0/5 | 0/5 | Low | No Evidence | **GAP** — Transactions, Locks, MVCC |
+| **HikariCP Connection Pooling** | **0/5** | 1/5 | 0/5 | 0/5 | 0/5 | Low | No Evidence | **GAP** — Connection Pool setup |
+| **OS Core Principles (Process, CPU)**| **3/5** | 3/5 | 2/5 | 1/5 | 1/5 | High | Verified | OS Theory lectures |
+| **Linux Terminal CLI & Permissions** | **3/5** | 3/5 | 3/5 | 2/5 | 2/5 | High | Verified | Ubuntu VM & WSL setup |
+| **Bash Shell Scripting** | **3/5** | 3/5 | 3/5 | 2/5 | 2/5 | High | Verified | Bash automation scripts |
+| **Linux System Programming** | **0/5** | 1/5 | 0/5 | 0/5 | 0/5 | Low | No Evidence | **GAP** — `fork`, `exec`, `epoll` |
+| **Linux Network Namespaces & Bridges**| **1/5** | 1/5 | 0/5 | 0/5 | 0/5 | Low | No Evidence | **GAP** — Container Prerequisite |
+| **Java TCP & UDP Socket Apps** | **3/5** | 3/5 | 3/5 | 2/5 | 2/5 | High | Verified | Chat Room, Remote Desktop apps |
+| **Computer Networking Infrastructure**| **1/5** | 2/5 | 1/5 | 0/5 | 0/5 | Low | Partial | **GAP** — CIDR, ARP, NAT, Wireshark |
+| **Git Version Control CLI** | **4/5** | 4/5 | 4/5 | 3/5 | 3/5 | High | Verified | Branching, rebasing, merge fix |
+| **GitHub Collaboration & PR Workflow**| **4/5** | 4/5 | 4/5 | 3/5 | 3/5 | High | Verified | Fork, Clone, Push, PR workflow |
+| **GitHub Actions CI/CD Automation** | **0/5** | 1/5 | 0/5 | 0/5 | 0/5 | Low | No Evidence | **GAP** — CI/CD Pipeline |
+| **Docker & Containerization** | **0/5** | 1/5 | 0/5 | 0/5 | 0/5 | Low | No Evidence | **GAP** — Containerization |

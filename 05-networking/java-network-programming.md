@@ -64,7 +64,7 @@
 **Knowledge $\rightarrow$ Source Mapping**:
 - **SRC-006** — Lập trình mạng sử dụng Java (TITV) | URL: https://titv.vn/courses-page/lap-trinh-mang-su-dung-java/ | Lessons 01-34 (InetAddress, TCP Sockets, Chat Room, Remote Desktop, UDP, Multicast, RMI)
 
-Master Sources Catalog: [`00-sources/learning-sources.md`](file:///e:/myKnownlage/00-sources/learning-sources.md)
+Master Sources Catalog: [`00-sources/learning-sources.md`](../00-sources/learning-sources.md)
 
 ## Weaknesses
 - Strong in Java Socket API programming, but lacking deep OSI 7-layer / TCP/IP packet level troubleshooting tools (Wireshark, tcpdump).

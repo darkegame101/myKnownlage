@@ -46,7 +46,7 @@
 - **SRC-002** — Cấu trúc dữ liệu và giải thuật Java (TITV) | URL: https://titv.vn/courses-page/video-cau-truc-du-lieu-va-giai-thuat-java/ | Lessons 01-14 (Big O, Arrays, Singly Linked List)
 - **SRC-001** — Lập trình Java – Java Core (TITV) | URL: https://titv.vn/courses-page/lap-trinh-java-java-core/ | Lessons 27a, 53, 60-66 (Arrays & Collections intro)
 
-Master Sources Catalog: [`00-sources/learning-sources.md`](file:///e:/myKnownlage/00-sources/learning-sources.md)
+Master Sources Catalog: [`00-sources/learning-sources.md`](../00-sources/learning-sources.md)
 
 ## Weaknesses
 - Limited coverage of algorithms in course syllabus (focus was primarily on Arrays, Generics, and Singly Linked List).
