@@ -47,12 +47,12 @@
 - Debug low-level kernel panics, core dumps, or C memory corruption issues.
 - Configure advanced kernel tuning parameters (`sysctl`, kernel memory page allocation, swapiness tuning).
 
-## Evidence
-- **Source**: TITV - Nguyên lý Hệ điều hành
-- **URL**: [https://titv.vn/courses-page/he-dieu-hanh/](https://titv.vn/courses-page/he-dieu-hanh/)
-- **Section/Lectures**: Lessons 01 to 16 (Full course completed)
-- **Date learned**: Completed
-- **Lab/Project**: Theoretical OS principles course. *Practical ability verified via course exercises; kernel lab not verified.*
+## Sources & Knowledge Traceability
+
+**Knowledge $\rightarrow$ Source Mapping**:
+- **SRC-005** — Nguyên lý hệ điều hành (TITV) | URL: https://titv.vn/courses-page/he-dieu-hanh/ | Lessons 01-16 (System Calls, CPU Scheduling, Synchronization, Deadlock, Memory Paging)
+
+Master Sources Catalog: [`00-sources/learning-sources.md`](file:///e:/myKnownlage/00-sources/learning-sources.md)
 
 ## Weaknesses
 - Purely theoretical understanding of OS concepts without writing C kernel/system code.

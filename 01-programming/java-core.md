@@ -44,20 +44,13 @@
 - Optimize Java memory performance, analyze garbage collection (GC) pauses, or profile JVM memory leaks.
 - Unit test Java code using JUnit 5 and Mockito framework.
 
-## Sources & Evidence Traceability
-1. **Course ID**: [C001](file:///e:/myKnownlage/00-sources/C001-java-core.md) — Lập trình Java (Java Core)
-   - **Provider**: TITV
-   - **URL**: [https://titv.vn/courses-page/lap-trinh-java-java-core/](https://titv.vn/courses-page/lap-trinh-java-java-core/)
-   - **Sections**: Lessons 01 to 27a (Syntax, Loops, Arrays), Lessons 49 to 76 (Strings, Collections, File I/O), Lessons 77 to 104 (Swing GUI).
-   - **Lectures Learned**: Java 01–27a, Java 49–76, Java 77–104.
-   - **Evidence**: Student Management GUI App (Swing + Collections + Object File I/O). *Practical ability verified via course exercises; production-grade project not verified.*
+## Sources & Knowledge Traceability
 
-2. **Course ID**: [C006](file:///e:/myKnownlage/00-sources/C006-java-network.md) — Lập trình mạng (sử dụng Java)
-   - **Provider**: TITV
-   - **URL**: [https://titv.vn/courses-page/lap-trinh-mang-su-dung-java/](https://titv.vn/courses-page/lap-trinh-mang-su-dung-java/)
-   - **Sections**: Lessons 06 to 17 (Java I/O streams & File management refresher).
-   - **Lectures Learned**: Lessons 06–17.
-   - **Evidence**: File copy and card manager scripts.
+**Knowledge $\rightarrow$ Source Mapping**:
+- **SRC-001** — Lập trình Java – Java Core (TITV) | URL: https://titv.vn/courses-page/lap-trinh-java-java-core/ | Lessons 01-27a, 49-76, 77-104
+- **SRC-006** — Lập trình mạng sử dụng Java (TITV) | URL: https://titv.vn/courses-page/lap-trinh-mang-su-dung-java/ | Lessons 06-17 (Stream I/O & File management refresher)
+
+Master Sources Catalog: [`00-sources/learning-sources.md`](file:///e:/myKnownlage/00-sources/learning-sources.md)
 
 ## Weaknesses
 - Lack of hands-on experience with modern Java versions (Java 11/17/21 LTS features).

@@ -42,12 +42,12 @@
 - Refactor legacy monolithic codebases into decoupled, modular OOP components.
 - Analyze trade-offs of Composition vs Inheritance in complex domain-driven designs.
 
-## Evidence
-- **Source**: TITV - Lập trình Java (Java Core)
-- **URL**: [https://titv.vn/courses-page/lap-trinh-java-java-core/](https://titv.vn/courses-page/lap-trinh-java-java-core/)
-- **Section/Lectures**: Lessons 28 to 48 (OOP chapters)
-- **Date learned**: Completed
-- **Lab/Project**: Book, Movie, Student, and Computer management OOP exercises. *Practical ability verified via course exercises.*
+## Sources & Knowledge Traceability
+
+**Knowledge $\rightarrow$ Source Mapping**:
+- **SRC-001** — Lập trình Java – Java Core (TITV) | URL: https://titv.vn/courses-page/lap-trinh-java-java-core/ | Lessons 28-48 (OOP Pillars, UML, Abstract, Interface)
+
+Master Sources Catalog: [`00-sources/learning-sources.md`](file:///e:/myKnownlage/00-sources/learning-sources.md)
 
 ## Weaknesses
 - Limited exposure to SOLID principles (Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, Dependency Inversion).

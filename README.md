@@ -9,14 +9,14 @@ This repository tracks all IT knowledge, theoretical understanding, practical sk
 
 ## 📊 Quick Dashboard Overview
 
-| Domain | Overall Level | Theory Level | Practical Level | Primary Source Courses | Summary Link |
+| Domain | Overall Level | Theory Level | Practical Level | Primary Source IDs | Summary Link |
 | :--- | :---: | :---: | :---: | :--- | :---: |
-| **01. Programming (Java)** | **3/5** | 3/5 | 2/5 | [`C001`](file:///e:/myKnownlage/00-sources/C001-java-core.md), [`C006`](file:///e:/myKnownlage/00-sources/C006-java-network.md) | [`01-programming`](file:///e:/myKnownlage/01-programming/summary.md) |
-| **02. Data Structures & Algorithms** | **2/5** | 3/5 | 2/5 | [`C002`](file:///e:/myKnownlage/00-sources/C002-dsa-java.md) | [`02-dsa`](file:///e:/myKnownlage/02-dsa/summary.md) |
-| **03. Databases** | **3/5** | 3/5 | 3/5 | [`C003`](file:///e:/myKnownlage/00-sources/C003-sql-server.md), [`C004`](file:///e:/myKnownlage/00-sources/C004-java-jdbc.md) | [`03-databases`](file:///e:/myKnownlage/03-databases/summary.md) |
-| **04. Operating Systems & Linux** | **3/5** | 3/5 | 3/5 | [`C005`](file:///e:/myKnownlage/00-sources/C005-os-concepts.md), [`C008`](file:///e:/myKnownlage/00-sources/C008-linux-lpi.md) | [`04-operating-systems`](file:///e:/myKnownlage/04-operating-systems/summary.md) |
-| **05. Computer Networking** | **3/5** | 3/5 | 3/5 | [`C006`](file:///e:/myKnownlage/00-sources/C006-java-network.md) | [`05-networking`](file:///e:/myKnownlage/05-networking/summary.md) |
-| **06. DevOps Tools** | **4/5** | 4/5 | 4/5 | [`C007`](file:///e:/myKnownlage/00-sources/C007-git-github.md) | [`06-devops-tools`](file:///e:/myKnownlage/06-devops-tools/summary.md) |
+| **01. Programming (Java)** | **3/5** | 3/5 | 2/5 | [`SRC-001`](file:///e:/myKnownlage/00-sources/learning-sources.md#src-001), [`SRC-006`](file:///e:/myKnownlage/00-sources/learning-sources.md#src-006) | [`01-programming`](file:///e:/myKnownlage/01-programming/summary.md) |
+| **02. Data Structures & Algorithms** | **2/5** | 3/5 | 2/5 | [`SRC-002`](file:///e:/myKnownlage/00-sources/learning-sources.md#src-002) | [`02-dsa`](file:///e:/myKnownlage/02-dsa/summary.md) |
+| **03. Databases** | **3/5** | 3/5 | 3/5 | [`SRC-003`](file:///e:/myKnownlage/00-sources/learning-sources.md#src-003), [`SRC-004`](file:///e:/myKnownlage/00-sources/learning-sources.md#src-004) | [`03-databases`](file:///e:/myKnownlage/03-databases/summary.md) |
+| **04. Operating Systems & Linux** | **3/5** | 3/5 | 3/5 | [`SRC-005`](file:///e:/myKnownlage/00-sources/learning-sources.md#src-005), [`SRC-008`](file:///e:/myKnownlage/00-sources/learning-sources.md#src-008) | [`04-operating-systems`](file:///e:/myKnownlage/04-operating-systems/summary.md) |
+| **05. Computer Networking** | **3/5** | 3/5 | 3/5 | [`SRC-006`](file:///e:/myKnownlage/00-sources/learning-sources.md#src-006) | [`05-networking`](file:///e:/myKnownlage/05-networking/summary.md) |
+| **06. DevOps Tools** | **4/5** | 4/5 | 4/5 | [`SRC-007`](file:///e:/myKnownlage/00-sources/learning-sources.md#src-007) | [`06-devops-tools`](file:///e:/myKnownlage/06-devops-tools/summary.md) |
 
 ---
 
@@ -26,6 +26,7 @@ This repository tracks all IT knowledge, theoretical understanding, practical sk
 e:\myKnownlage\
 ├── README.md                          # Main repository overview & dashboard index
 ├── 00-sources/                        # Master course registry & source summaries
+│   ├── learning-sources.md           # Master Learning Sources Registry (SRC-001 - SRC-008)
 │   ├── courses.md                    # Master course registry table & tracking index
 │   ├── C001-java-core.md             # Detailed course summary for Java Core
 │   ├── C002-dsa-java.md              # Detailed course summary for CTDL-GT Java
@@ -67,7 +68,8 @@ e:\myKnownlage\
 
 ## 🎯 Central Dashboards & Reports
 
-- 📚 **[Master Course Registry](file:///e:/myKnownlage/00-sources/courses.md)**: Catalog of all learning sources with bidirectional mapping.
+- 📖 **[Learning Sources Registry](file:///e:/myKnownlage/00-sources/learning-sources.md)**: Master log of all learning inputs (SRC-001 – SRC-008) with bidirectional mapping.
+- 📚 **[Master Course Catalog](file:///e:/myKnownlage/00-sources/courses.md)**: Catalog of all learning sources with lesson indexes.
 - 🗺️ **[Knowledge Map](file:///e:/myKnownlage/00-dashboard/knowledge-map.md)**: Visual diagram and domain level mapping.
 - 📊 **[Skill Matrix](file:///e:/myKnownlage/00-dashboard/skill-matrix.md)**: Capability evaluations on a 0–5 scale across Theory, Practical, Troubleshooting, and Design.
 - 🔍 **[Gap Analysis](file:///e:/myKnownlage/00-dashboard/gap-analysis.md)**: Detailed report on missing knowledge, practical gaps, and prerequisite blockers.

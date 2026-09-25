@@ -47,12 +47,13 @@
 - Use modern Java ORM / Persistence Frameworks (Hibernate, Spring Data JPA, MyBatis).
 - Handle N+1 query problems in object-relational mapping manually.
 
-## Evidence
-- **Source**: TITV - Lập trình Java tương tác CSDL (JDBC)
-- **URL**: [https://titv.vn/courses-page/lap-trinh-java-tuong-tac-csdl/](https://titv.vn/courses-page/lap-trinh-java-tuong-tac-csdl/)
-- **Section/Lectures**: Lessons 01 to 09 (Full course completed)
-- **Date learned**: Completed
-- **Lab/Project**: Data Access Object (DAO) implementation for Java Models. *Practical ability verified via course exercises.*
+## Sources & Knowledge Traceability
+
+**Knowledge $\rightarrow$ Source Mapping**:
+- **SRC-004** — Lập trình Java tương tác với Cơ sở dữ liệu (JDBC) (TITV) | URL: https://titv.vn/courses-page/lap-trinh-java-tuong-tac-csdl/ | Lessons 01-09 (Connection, PreparedStatement, DAO Pattern)
+- **SRC-003** — SQL Server (TITV) | URL: https://titv.vn/courses-page/sql-server/ | Relational query foundation
+
+Master Sources Catalog: [`00-sources/learning-sources.md`](file:///e:/myKnownlage/00-sources/learning-sources.md)
 
 ## Weaknesses
 - Manual JDBC connection handling without Connection Pool (HikariCP).

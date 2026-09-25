@@ -69,12 +69,13 @@
 - Manage SELinux or AppArmor security profiles.
 - Configure enterprise services: Nginx/Apache reverse proxies, BIND DNS servers, DHCP servers, NFS/Samba file sharing.
 
-## Evidence
-- **Source**: TITV - Hệ điều hành Linux (LPI 1-2)
-- **URL**: [https://titv.vn/courses-page/video-he-djieu-hanh-linux-lpi-1-2/](https://titv.vn/courses-page/video-he-djieu-hanh-linux-lpi-1-2/)
-- **Section/Lectures**: Lessons 01 to 55 (Full course completed)
-- **Date learned**: Completed
-- **Lab/Project**: Linux VM / WSL administration & Bash scripts (Prime number script, Array min finder, File I/O sorter). *Practical ability verified via course labs.*
+## Sources & Knowledge Traceability
+
+**Knowledge $\rightarrow$ Source Mapping**:
+- **SRC-008** — Hệ điều hành Linux LPI-1/2 (TITV) | URL: https://titv.vn/courses-page/video-he-djieu-hanh-linux-lpi-1-2/ | Lessons 01-55 (FHS, CLI, Permissions, Vim, Bash Scripting)
+- **SRC-005** — Nguyên lý hệ điều hành (TITV) | URL: https://titv.vn/courses-page/he-dieu-hanh/ | OS Kernel & System call architecture
+
+Master Sources Catalog: [`00-sources/learning-sources.md`](file:///e:/myKnownlage/00-sources/learning-sources.md)
 
 ## Weaknesses
 - Limited experience with advanced Linux networking (iptables, NAT, bridge networks, Network Namespaces).

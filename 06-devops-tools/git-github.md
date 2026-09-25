@@ -59,12 +59,12 @@
 - Configure CI/CD pipelines on GitHub (GitHub Actions `.github/workflows/ci.yml`).
 - Set up branch protection rules, code owners (`CODEOWNERS`), and automated PR checks on enterprise GitHub repositories.
 
-## Evidence
-- **Source**: TITV - Git và GitHub toàn tập
-- **URL**: [https://titv.vn/courses-page/git-va-github-toan-tap/](https://titv.vn/courses-page/git-va-github-toan-tap/)
-- **Section/Lectures**: Lessons 01 to 24 (Full course completed)
-- **Date learned**: Completed
-- **Lab/Project**: Git CLI workflow exercises, GitHub repo management, Fork & PR workflow. *Practical ability verified via course exercises.*
+## Sources & Knowledge Traceability
+
+**Knowledge $\rightarrow$ Source Mapping**:
+- **SRC-007** — Git và GitHub toàn tập (TITV) | URL: https://titv.vn/courses-page/git-va-github-toan-tap/ | Lessons 01-24 (Git CLI, Branching, Rebase, Conflicts, Reset/Revert, PRs)
+
+Master Sources Catalog: [`00-sources/learning-sources.md`](file:///e:/myKnownlage/00-sources/learning-sources.md)
 
 ## Weaknesses
 - Limited experience with GitHub Actions CI/CD workflows.

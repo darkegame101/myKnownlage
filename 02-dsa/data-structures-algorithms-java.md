@@ -40,12 +40,13 @@
 - Apply Graph algorithms: BFS, DFS, Dijkstra, Prim, Kruskal, Topological Sort.
 - Solve dynamic programming (DP) or complex recursion/backtracking problems.
 
-## Evidence
-- **Source**: TITV - Cấu trúc dữ liệu và giải thuật Java
-- **URL**: [https://titv.vn/courses-page/video-cau-truc-du-lieu-va-giai-thuat-java/](https://titv.vn/courses-page/video-cau-truc-du-lieu-va-giai-thuat-java/)
-- **Section/Lectures**: Lessons 01 to 14
-- **Date learned**: Completed
-- **Lab/Project**: Student Management system using Linked List. *Practical ability verified via course exercise.*
+## Sources & Knowledge Traceability
+
+**Knowledge $\rightarrow$ Source Mapping**:
+- **SRC-002** — Cấu trúc dữ liệu và giải thuật Java (TITV) | URL: https://titv.vn/courses-page/video-cau-truc-du-lieu-va-giai-thuat-java/ | Lessons 01-14 (Big O, Arrays, Singly Linked List)
+- **SRC-001** — Lập trình Java – Java Core (TITV) | URL: https://titv.vn/courses-page/lap-trinh-java-java-core/ | Lessons 27a, 53, 60-66 (Arrays & Collections intro)
+
+Master Sources Catalog: [`00-sources/learning-sources.md`](file:///e:/myKnownlage/00-sources/learning-sources.md)
 
 ## Weaknesses
 - Limited coverage of algorithms in course syllabus (focus was primarily on Arrays, Generics, and Singly Linked List).

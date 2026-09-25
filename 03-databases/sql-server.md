@@ -50,12 +50,12 @@
 - Perform database administration tasks: backup strategies, transaction log truncation, security role auditing.
 - Handle database migration scripts and schema version control tools (Flyway, Liquibase).
 
-## Evidence
-- **Source**: TITV - SQL Server (Cơ bản và Nâng cao)
-- **URL**: [https://titv.vn/courses-page/sql-server/](https://titv.vn/courses-page/sql-server/)
-- **Section/Lectures**: Lessons 01 to 47 (Full course completed)
-- **Date learned**: Completed
-- **Lab/Project**: Practice queries on sample relational database. *Practical ability verified via course exercises.*
+## Sources & Knowledge Traceability
+
+**Knowledge $\rightarrow$ Source Mapping**:
+- **SRC-003** — SQL Server (Cơ bản và Nâng cao) (TITV) | URL: https://titv.vn/courses-page/sql-server/ | Lessons 01-47 (DQL, DDL, DML, CTE, Window Func, T-SQL)
+
+Master Sources Catalog: [`00-sources/learning-sources.md`](file:///e:/myKnownlage/00-sources/learning-sources.md)
 
 ## Weaknesses
 - Limited experience with database performance profiling under high concurrent write loads.

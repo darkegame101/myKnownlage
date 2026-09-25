@@ -59,12 +59,12 @@
 - Build modern Non-blocking I/O (NIO) netty/event-loop network applications.
 - Configure TLS/SSL certificates (`SSLSocket`, HTTPS) over Java sockets.
 
-## Evidence
-- **Source**: TITV - Lập trình mạng (sử dụng Java)
-- **URL**: [https://titv.vn/courses-page/lap-trinh-mang-su-dung-java/](https://titv.vn/courses-page/lap-trinh-mang-su-dung-java/)
-- **Section/Lectures**: Lessons 01 to 34 (Full course completed)
-- **Date learned**: Completed
-- **Lab/Project**: NSLOOKUP App, TCP Chat Room App, UDP DNS Simulator, Remote Desktop GUI App, Multicast Lightstick Controller. *Practical ability verified via course projects.*
+## Sources & Knowledge Traceability
+
+**Knowledge $\rightarrow$ Source Mapping**:
+- **SRC-006** — Lập trình mạng sử dụng Java (TITV) | URL: https://titv.vn/courses-page/lap-trinh-mang-su-dung-java/ | Lessons 01-34 (InetAddress, TCP Sockets, Chat Room, Remote Desktop, UDP, Multicast, RMI)
+
+Master Sources Catalog: [`00-sources/learning-sources.md`](file:///e:/myKnownlage/00-sources/learning-sources.md)
 
 ## Weaknesses
 - Strong in Java Socket API programming, but lacking deep OSI 7-layer / TCP/IP packet level troubleshooting tools (Wireshark, tcpdump).
