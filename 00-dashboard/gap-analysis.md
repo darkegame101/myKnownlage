@@ -47,7 +47,7 @@ Comprehensive identification of missing knowledge, practical gaps, depth gaps, a
 2. **Database Queries & JDBC vs Concurrency & Transactions**
    - *Theory*: SQL Server queries, JOINs, CTEs, JDBC DAO pattern (Level 3/5).
    - *Practical*: SQL Server queries & JDBC DAO exercises (Level 3/5).
-   - *Gap*: Zero practical experience with HikariCP connection pooling, `conn.setAutoCommit(false)` explicit transaction rollbacks, or isolation level configuration in Java code.
+   - *Gap*: Zero practical experience with HikariCP connection pooling, `conn.setAutoCommit(false)` explicit transaction rollbacks, or testing isolation levels under concurrent writes.
 
 3. **Linux Admin vs Linux Network Namespaces**
    - *Theory*: Linux CLI, FHS, permissions, Bash scripting (Level 3/5).
@@ -58,21 +58,27 @@ Comprehensive identification of missing knowledge, practical gaps, depth gaps, a
 
 ## 3. Prerequisite Gap Verification for Target Pathways
 
+> 💡 **Prerequisite Policy**: We only enforce strict dependencies required to *start* a pathway. Follow-on skills are tracked as subsequent topics, not artificial prerequisites.
+
 ### Pathway A: Spring Boot Microservices
-- **Dependencies Required**:
+- **Strict Prerequisites Needed to Start**:
   1. Java Core & OOP: **READY (3/5)**
   2. SQL Queries & Database: **READY (3/5)**
-  3. Maven Build Tool: **NOT READY (0/5)** -> *PREREQUISITE GAP*
-  4. Java 8 Streams API: **NOT READY (1/5)** -> *PREREQUISITE GAP*
-  5. JUnit 5 Testing: **NOT READY (0/5)** -> *PREREQUISITE GAP*
-  6. JPA / Hibernate ORM: **NOT READY (0/5)** -> *PREREQUISITE GAP*
-- **Verdict**: **PARTIALLY READY**. Complete Maven, Streams API, and JUnit 5 before Spring Boot.
+  3. Maven Build Tool: **NOT READY (1/5 - Theory only, Practical 0/5)** -> *PREREQUISITE GAP*
+  4. Basic Testing (JUnit 5): **NOT READY (0/5)** -> *PREREQUISITE GAP*
+  5. Java 8 Streams API: **NOT READY (1/5)** -> *PREREQUISITE GAP (Recommended)*
+- **Follow-on Skills (NOT Prerequisites to start Spring Boot)**:
+  - Spring Data JPA / Hibernate *(learned alongside/after Spring Boot basics)*
+  - Spring Security & JWT
+  - Redis & Kafka
+- **Verdict**: **PARTIALLY READY**. Complete Maven, Java Streams, and basic JUnit 5 before starting Spring Boot.
 
 ### Pathway B: Docker Container Networking
-- **Dependencies Required**:
+- **Strict Prerequisites Needed to Start**:
   1. Linux CLI & SysAdmin: **READY (3/5)**
   2. Bash Scripting: **READY (3/5)**
-  3. Networking Sockets: **READY (3/5)**
-  4. Computer Networking (CIDR, ARP, NAT): **NOT READY (1/5)** -> *PREREQUISITE GAP*
-  5. Linux Network Namespaces & Bridges: **NOT READY (1/5)** -> *PREREQUISITE GAP*
+  3. Computer Networking Fundamentals (CIDR, Routing, NAT): **NOT READY (1/5)** -> *PREREQUISITE GAP*
+  4. Linux Network Namespaces & Bridges: **NOT READY (1/5)** -> *PREREQUISITE GAP*
+- **Supporting Context (NOT a substitute for Networking Infra)**:
+  - Java Socket Programming (Level 3/5) provides application-layer context, but does **not** replace Layer 2/3 networking primitives.
 - **Verdict**: **PARTIALLY READY**. Complete CIDR Subnetting and Linux Network Namespaces before Docker Networking.

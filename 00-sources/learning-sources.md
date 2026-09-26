@@ -1,21 +1,21 @@
 # Master Learning Sources Registry (`learning-sources.md`)
 
-Master catalog tracking all learning sources, courses, tutorials, and documentation (past, current, and planned). This file serves as the single source of truth for all learning inputs and maps directly to the Knowledge Base.
+Master catalog tracking all learning sources, courses, tutorials, and documentation (past, current, and planned). This file serves as the canonical single source of truth for all learning inputs and maps directly to the Knowledge Base.
 
 ---
 
 ## 📊 Learning Sources Summary Table
 
-| ID | Domain | Topic | Source / Course | Provider | URL | Status | Coverage Overview | Date |
-| :---: | :--- | :--- | :--- | :---: | :--- | :---: | :--- | :---: |
-| **SRC-001** | Programming | Java Core | Lập trình Java – Java Core | TITV | [Link](https://titv.vn/courses-page/lap-trinh-java-java-core/) | Completed | Syntax, Control Flow, OOP, Collections, File I/O, Swing GUI | 2026-09-26 |
-| **SRC-002** | Programming | Data Structures & Algorithms | Cấu trúc dữ liệu và giải thuật Java | TITV | [Link](https://titv.vn/courses-page/video-cau-truc-du-lieu-va-giai-thuat-java/) | Completed | Big O, 1D/2D Arrays, Generics, Singly Linked List | 2026-09-26 |
-| **SRC-003** | Database | SQL | SQL Server | TITV | [Link](https://titv.vn/courses-page/sql-server/) | Completed | DDL/DML, JOINs, Subqueries, CTEs, Window Func, T-SQL | 2026-09-26 |
-| **SRC-004** | Database | JDBC / Database Programming | Lập trình Java tương tác CSDL | TITV | [Link](https://titv.vn/courses-page/lap-trinh-java-tuong-tac-csdl/) | Completed | Connection, PreparedStatement, SQL Injection, DAO Pattern | 2026-09-26 |
-| **SRC-005** | Computer Systems | Operating Systems | Nguyên lý hệ điều hành | TITV | [Link](https://titv.vn/courses-page/he-dieu-hanh/) | Completed | System Calls, PCB, CPU Scheduling, Mutex, Deadlock, Paging | 2026-09-26 |
-| **SRC-006** | Networking | Network Programming | Lập trình mạng sử dụng Java | TITV | [Link](https://titv.vn/courses-page/lap-trinh-mang-su-dung-java/) | Completed | InetAddress, Multithreading, TCP/UDP Sockets, Multicast, RMI | 2026-09-26 |
-| **SRC-007** | Tools | Git / GitHub | Git và GitHub toàn tập | TITV | [Link](https://titv.vn/courses-page/git-va-github-toan-tap/) | Completed | Git CLI, 3 States, Branching, Rebase, Conflicts, Reset/Revert, PRs | 2026-09-26 |
-| **SRC-008** | Computer Systems | Linux | Hệ điều hành Linux LPI-1/2 | TITV | [Link](https://titv.vn/courses-page/video-he-djieu-hanh-linux-lpi-1-2/) | Completed | Linux FHS, CLI, Permissions, Users, Vim, Bash Scripting | 2026-09-26 |
+| ID | Domain | Topic | Source / Course | Provider | Type | Status | Verification | Coverage Confidence | Last Verified |
+| :---: | :--- | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| **SRC-001** | Programming | Java Core | [Lập trình Java – Java Core](https://titv.vn/courses-page/lap-trinh-java-java-core/) | TITV | Course | Completed | Verified | High | 2026-09-26 |
+| **SRC-002** | Programming | Data Structures & Algorithms | [Cấu trúc dữ liệu và giải thuật Java](https://titv.vn/courses-page/video-cau-truc-du-lieu-va-giai-thuat-java/) | TITV | Course | Completed | Verified | High | 2026-09-26 |
+| **SRC-003** | Database | SQL | [SQL Server](https://titv.vn/courses-page/sql-server/) | TITV | Course | Completed | Verified | High | 2026-09-26 |
+| **SRC-004** | Database | JDBC / Database Programming | [Lập trình Java tương tác CSDL](https://titv.vn/courses-page/lap-trinh-java-tuong-tac-csdl/) | TITV | Course | Completed | Verified | High | 2026-09-26 |
+| **SRC-005** | Computer Systems | Operating Systems | [Nguyên lý hệ điều hành](https://titv.vn/courses-page/he-dieu-hanh/) | TITV | Course | Completed | Verified | High | 2026-09-26 |
+| **SRC-006** | Networking | Network Programming | [Lập trình mạng sử dụng Java](https://titv.vn/courses-page/lap-trinh-mang-su-dung-java/) | TITV | Course | Completed | Verified | High | 2026-09-26 |
+| **SRC-007** | Tools | Git / GitHub | [Git và GitHub toàn tập](https://titv.vn/courses-page/git-va-github-toan-tap/) | TITV | Course | Completed | Verified | High | 2026-09-26 |
+| **SRC-008** | Computer Systems | Linux | [Hệ điều hành Linux LPI-1/2](https://titv.vn/courses-page/video-he-djieu-hanh-linux-lpi-1-2/) | TITV | Course | Completed | Verified | High | 2026-09-26 |
 
 ---
 
@@ -27,8 +27,11 @@ Master catalog tracking all learning sources, courses, tutorials, and documentat
 - **Course**: Lập trình Java – Java Core
 - **Provider**: TITV
 - **URL**: [https://titv.vn/courses-page/lap-trinh-java-java-core/](https://titv.vn/courses-page/lap-trinh-java-java-core/)
+- **Source Type**: Online Video Course
 - **Status**: Completed
-- **Date**: 2026-09-26
+- **Verification Status**: Verified (111 lessons curriculum verified)
+- **Last Verified**: 2026-09-26
+- **Coverage Confidence**: High
 - **Coverage**:
   - Environment setup (JDK, Eclipse)
   - Primitive Data Types & Variables
@@ -58,8 +61,11 @@ Master catalog tracking all learning sources, courses, tutorials, and documentat
 - **Course**: Cấu trúc dữ liệu và giải thuật Java
 - **Provider**: TITV
 - **URL**: [https://titv.vn/courses-page/video-cau-truc-du-lieu-va-giai-thuat-java/](https://titv.vn/courses-page/video-cau-truc-du-lieu-va-giai-thuat-java/)
+- **Source Type**: Online Video Course
 - **Status**: Completed
-- **Date**: 2026-09-26
+- **Verification Status**: Verified (21 lessons curriculum verified)
+- **Last Verified**: 2026-09-26
+- **Coverage Confidence**: High
 - **Coverage**:
   - Introduction to Data Structures & Algorithms
   - Big O Time & Space Complexity analysis
@@ -81,8 +87,11 @@ Master catalog tracking all learning sources, courses, tutorials, and documentat
 - **Course**: SQL Server
 - **Provider**: TITV
 - **URL**: [https://titv.vn/courses-page/sql-server/](https://titv.vn/courses-page/sql-server/)
+- **Source Type**: Online Video Course
 - **Status**: Completed
-- **Date**: 2026-09-26
+- **Verification Status**: Verified (53 lessons curriculum verified)
+- **Last Verified**: 2026-09-26
+- **Coverage Confidence**: High
 - **Coverage**:
   - SQL Server 2022 & SSMS setup
   - DQL: `SELECT`, `SELECT DISTINCT`, `SELECT TOP`, Aliases (`AS`)
@@ -106,8 +115,11 @@ Master catalog tracking all learning sources, courses, tutorials, and documentat
 - **Course**: Lập trình Java tương tác CSDL
 - **Provider**: TITV
 - **URL**: [https://titv.vn/courses-page/lap-trinh-java-tuong-tac-csdl/](https://titv.vn/courses-page/lap-trinh-java-tuong-tac-csdl/)
+- **Source Type**: Online Video Course
 - **Status**: Completed
-- **Date**: 2026-09-26
+- **Verification Status**: Verified (14 lessons curriculum verified)
+- **Last Verified**: 2026-09-26
+- **Coverage Confidence**: High
 - **Coverage**:
   - JDBC Architecture & Driver Manager
   - Establishing database connections (`DriverManager.getConnection`)
@@ -129,8 +141,11 @@ Master catalog tracking all learning sources, courses, tutorials, and documentat
 - **Course**: Nguyên lý hệ điều hành
 - **Provider**: TITV
 - **URL**: [https://titv.vn/courses-page/he-dieu-hanh/](https://titv.vn/courses-page/he-dieu-hanh/)
+- **Source Type**: Online Video Course
 - **Status**: Completed
-- **Date**: 2026-09-26
+- **Verification Status**: Verified (24 lessons curriculum verified)
+- **Last Verified**: 2026-09-26
+- **Coverage Confidence**: High
 - **Coverage**:
   - Computer Organization & Hardware abstraction
   - Operating System Services & System Calls (API)
@@ -154,8 +169,11 @@ Master catalog tracking all learning sources, courses, tutorials, and documentat
 - **Course**: Lập trình mạng sử dụng Java
 - **Provider**: TITV
 - **URL**: [https://titv.vn/courses-page/lap-trinh-mang-su-dung-java/](https://titv.vn/courses-page/lap-trinh-mang-su-dung-java/)
+- **Source Type**: Online Video Course
 - **Status**: Completed
-- **Date**: 2026-09-26
+- **Verification Status**: Verified (41 lessons curriculum verified)
+- **Last Verified**: 2026-09-26
+- **Coverage Confidence**: High
 - **Coverage**:
   - Network applications & InetAddress IP handling
   - Java Stream I/O review & Logging best practices
@@ -182,8 +200,11 @@ Master catalog tracking all learning sources, courses, tutorials, and documentat
 - **Course**: Git và GitHub toàn tập
 - **Provider**: TITV
 - **URL**: [https://titv.vn/courses-page/git-va-github-toan-tap/](https://titv.vn/courses-page/git-va-github-toan-tap/)
+- **Source Type**: Online Video Course
 - **Status**: Completed
-- **Date**: 2026-09-26
+- **Verification Status**: Verified (30 lessons curriculum verified)
+- **Last Verified**: 2026-09-26
+- **Coverage Confidence**: High
 - **Coverage**:
   - Version Control System (VCS) fundamentals
   - Git CLI installation & user identity configuration (`user.name`, `user.email`)
@@ -210,8 +231,11 @@ Master catalog tracking all learning sources, courses, tutorials, and documentat
 - **Course**: Hệ điều hành Linux LPI-1/2
 - **Provider**: TITV
 - **URL**: [https://titv.vn/courses-page/video-he-djieu-hanh-linux-lpi-1-2/](https://titv.vn/courses-page/video-he-djieu-hanh-linux-lpi-1-2/)
+- **Source Type**: Online Video Course
 - **Status**: Completed
-- **Date**: 2026-09-26
+- **Verification Status**: Verified (61 lessons curriculum verified)
+- **Last Verified**: 2026-09-26
+- **Coverage Confidence**: High
 - **Coverage**:
   - Linux Architecture & Filesystem Hierarchy Standard (FHS: `/etc`, `/var`, `/usr`, `/bin`)
   - Ubuntu VirtualBox VM & WSL setup on Windows

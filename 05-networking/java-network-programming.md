@@ -1,4 +1,4 @@
-# Networking & Java Network Programming
+# Java Network Socket Programming
 
 ## Status
 - **Overall Level**: 3/5
@@ -7,6 +7,10 @@
 - **Troubleshooting**: 2/5
 - **Design**: 2/5
 - **Confidence**: High
+
+> ⚠️ **Scope Boundary**: This topic tracks **Application-Layer Java Network Socket Programming** (`Socket`, `ServerSocket`, `DatagramPacket`, I/O streams). Lower-layer **Computer Networking Infrastructure** (OSI/TCP-IP, Ethernet, MAC, ARP, IPv4, CIDR/Subnetting, Routing, NAT, DHCP, ICMP, Wireshark, tcpdump, TLS) is tracked separately as unverified/gap areas in the networking domain.
+
+---
 
 ## What I Have Learned
 - **Networking & Internet Overview**:
