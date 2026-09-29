@@ -17,10 +17,12 @@ Comprehensive identification of missing knowledge, practical gaps, depth gaps, a
 - **Performance & Infrastructure**: HikariCP Connection Pooling setup, reading SQL Execution Plans (Index Seek vs Index Scan, Key Lookup cost), Index fragmentation tuning, Flyway database schema migration tools.
 
 ### ☕ Java Backend Stack Gaps
-- **Build Tools**: Apache Maven (`pom.xml`, lifecycle, plugins, dependency management), Gradle.
-- **Modern Java & Functional**: Java 8+ Streams API (`map`, `filter`, `reduce`, `collect`), Lambdas, Functional Interfaces (`Predicate`, `Function`), `Optional`.
+- **Build Tools**: Advanced Maven CLI usage, custom plugins, publishing artifacts, Gradle. *(Note: Core Maven project management and multi-module builds resolved via C009).*
+- **Modern Java & Functional**: Advanced Stream Collectors (`Collector.of`), Parallel Streams thread safety, primitive streams (`IntStream`). *(Note: Core Lambdas, Streams filtering/mapping, and Optionals resolved via C010–C012).*
 - **Automated Testing**: JUnit 5 (`@Test`, `@ParameterizedTest`), Assertions, Mockito mocking framework (`@Mock`, `when().thenReturn()`), Testcontainers.
 - **Frameworks & Persistence**: Spring Boot, Spring Data JPA / Hibernate (`@Entity`, `JpaRepository`), REST API design, Spring Security & JWT, Redis caching, Kafka event streaming.
+
+
 
 ### 🐧 Linux & Systems Programming Gaps
 - **Container Primitives**: Linux Network Namespaces (`ip netns`), virtual ethernet pairs (`veth`), Linux Bridge interfaces (`brctl`), `iptables` / `nftables` NAT masquerading and port forwarding.
@@ -64,14 +66,16 @@ Comprehensive identification of missing knowledge, practical gaps, depth gaps, a
 - **Strict Prerequisites Needed to Start**:
   1. Java Core & OOP: **READY (3/5)**
   2. SQL Queries & Database: **READY (3/5)**
-  3. Maven Build Tool: **NOT READY (1/5 - Theory only, Practical 0/5)** -> *PREREQUISITE GAP*
-  4. Basic Testing (JUnit 5): **NOT READY (0/5)** -> *PREREQUISITE GAP*
-  5. Java 8 Streams API: **NOT READY (1/5)** -> *PREREQUISITE GAP (Recommended)*
+  3. Maven Build Tool: **READY (3/5)** -> *RESOLVED GAP (via C009)*
+  4. Java 8 Streams API & Lambdas: **READY (3/5)** -> *RESOLVED GAP (via C010–C012)*
+  5. Basic Testing (JUnit 5): **PARTIALLY READY (1/5)** -> *PREREQUISITE GAP (test runner covered in C009, write basic assertions)*
 - **Follow-on Skills (NOT Prerequisites to start Spring Boot)**:
   - Spring Data JPA / Hibernate *(learned alongside/after Spring Boot basics)*
   - Spring Security & JWT
   - Redis & Kafka
-- **Verdict**: **PARTIALLY READY**. Complete Maven, Java Streams, and basic JUnit 5 before starting Spring Boot.
+- **Verdict**: **READY TO LAUNCH SPRING BOOT**. All primary syntax, database, build, and functional prerequisites are satisfied at Level 3/5. Write a few basic JUnit 5 assertions and you can enter Spring Boot Core.
+
+
 
 ### Pathway B: Docker Container Networking
 - **Strict Prerequisites Needed to Start**:

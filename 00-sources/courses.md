@@ -2,7 +2,7 @@
 
 Comprehensive catalog of all learning sources, courses, curriculum maps, and resulting skill contributions to the Knowledge Base.
 
-> 💡 **Master Source Registry**: See [`00-sources/learning-sources.md`](./learning-sources.md) for complete Source IDs (SRC-001 – SRC-008) and bidirectional mapping.
+> 💡 **Master Source Registry**: See [`00-sources/learning-sources.md`](./learning-sources.md) for complete Source IDs (SRC-001 – SRC-012) and bidirectional mapping.
 
 ---
 
@@ -18,3 +18,9 @@ Comprehensive catalog of all learning sources, courses, curriculum maps, and res
 | **C006** | **SRC-006** | [Lập trình mạng Java](./C006-java-network.md) | TITV | Completed | [titv.vn](https://titv.vn/courses-page/lap-trinh-mang-su-dung-java/) | 3/5 | 3/5 | 2/5 | 2/5 |
 | **C007** | **SRC-007** | [Git & GitHub toàn tập](./C007-git-github.md) | TITV | Completed | [titv.vn](https://titv.vn/courses-page/git-va-github-toan-tap/) | 4/5 | 4/5 | 3/5 | 3/5 |
 | **C008** | **SRC-008** | [Hệ điều hành Linux (LPI 1-2)](./C008-linux-lpi.md) | TITV | Completed | [titv.vn](https://titv.vn/courses-page/video-he-djieu-hanh-linux-lpi-1-2/) | 3/5 | 3/5 | 2/5 | 2/5 |
+| **C009** | **SRC-009** | [Quản lý project Java với Maven](./C009-maven-java.md) | TITV | Completed | [titv.vn](https://titv.vn/courses-page/quan-ly-project-java-voi-maven/) | 3/5 | 3/5 | 2/5 | 2/5 |
+| **C010** | **SRC-010** | [Biểu thức Lambda trong Java](./C010-java-lambda.md) | Code Thu | Completed | [youtube.com](https://www.youtube.com/watch?v=dKzTdBXgHsg) | 3/5 | 3/5 | 2/5 | 2/5 |
+| **C011** | **SRC-011** | [Java Streams API Tutorial](./C011-java-streams.md) | SDET-QA | Completed | [youtube.com](https://www.youtube.com/playlist?list=PLUDwpEzHYYLvTPVqVIt7tlBohABLo4gyg) | 3/5 | 3/5 | 2/5 | 2/5 |
+| **C012** | **SRC-012** | [Optionals In Java](./C012-java-optional.md) | Coding with John | Completed | [youtube.com](https://www.youtube.com/watch?v=vKVzRbsMnTQ) | 3/5 | 3/5 | 2/5 | 2/5 |
+
+

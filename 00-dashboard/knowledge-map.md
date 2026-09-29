@@ -17,6 +17,8 @@ graph TD
     PROG --> P2[OOP Pillars & UML Modeling - Level 3/5]
     PROG --> P3[Java Collections & File I/O - Level 3/5]
     PROG --> P4[Java Swing GUI MVC - Level 3/5]
+    PROG --> P5[Apache Maven Build Tool - Level 3/5]
+    PROG --> P6[Java 8+ Streams API & Lambdas - Level 3/5]
 
     DSA --> D1[Big O Time Complexity Basics - Level 3/5]
     DSA --> D2[Arrays & Singly Linked List - Level 2/5]
@@ -52,6 +54,8 @@ graph TD
 | :--- | :--- | :---: | :---: | :---: | :---: | :--- |
 | [`01-programming/`](../01-programming/summary.md) | Java Core Syntax, Control Flow & I/O | 3/5 | 3/5 | 2/5 | **3/5** | [`SRC-001`](../00-sources/learning-sources.md#src-001) |
 | | Java OOP & UML Modeling | 3/5 | 3/5 | 2/5 | **3/5** | [`SRC-001`](../00-sources/learning-sources.md#src-001) |
+| | Apache Maven Build Management | 3/5 | 3/5 | 2/5 | **3/5** | [`SRC-009`](../00-sources/learning-sources.md#src-009) |
+| | Java 8+ Streams API, Lambdas & Optional | 3/5 | 3/5 | 2/5 | **3/5** | [`SRC-011`](../00-sources/learning-sources.md#src-011) |
 | [`02-dsa/`](../02-dsa/summary.md) | Arrays & Singly Linked List | 3/5 | 2/5 | 1/5 | **2/5** | [`SRC-002`](../00-sources/learning-sources.md#src-002) |
 | | Trees, Graphs & Advanced Sorting | 0/5 | 0/5 | 0/5 | **0/5** | *Untracked Gap* |
 | [`03-databases/`](../03-databases/summary.md) | SQL Server Querying, CTE & Window Func | 3/5 | 3/5 | 2/5 | **3/5** | [`SRC-003`](../00-sources/learning-sources.md#src-003) |

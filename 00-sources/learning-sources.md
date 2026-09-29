@@ -16,6 +16,12 @@ Master catalog tracking all learning sources, courses, tutorials, and documentat
 | **SRC-006** | Networking | Network Programming | [Lập trình mạng sử dụng Java](https://titv.vn/courses-page/lap-trinh-mang-su-dung-java/) | TITV | Course | Completed | Verified | High | 2026-09-26 |
 | **SRC-007** | Tools | Git / GitHub | [Git và GitHub toàn tập](https://titv.vn/courses-page/git-va-github-toan-tap/) | TITV | Course | Completed | Verified | High | 2026-09-26 |
 | **SRC-008** | Computer Systems | Linux | [Hệ điều hành Linux LPI-1/2](https://titv.vn/courses-page/video-he-djieu-hanh-linux-lpi-1-2/) | TITV | Course | Completed | Verified | High | 2026-09-26 |
+| **SRC-009** | Programming | Build Management / Maven | [[Video] Quản lý project Java với Maven](https://titv.vn/courses-page/quan-ly-project-java-voi-maven/) | TITV | Course | Completed | Verified | High | 2026-09-30 |
+| **SRC-010** | Programming | Java 8 Lambdas | [Biểu thức Lambda cực dễ hiểu](https://www.youtube.com/watch?v=dKzTdBXgHsg) | Code Thu | Video Tutorial | Completed | Verified | High | 2026-09-30 |
+| **SRC-011** | Programming | Java 8 Streams API | [Java Streams Tutorial Series](https://www.youtube.com/playlist?list=PLUDwpEzHYYLvTPVqVIt7tlBohABLo4gyg) | SDET-QA | Video Playlist | Completed | Verified | High | 2026-09-30 |
+| **SRC-012** | Programming | Java 8 Optionals | [Optionals In Java - Simple Tutorial](https://www.youtube.com/watch?v=vKVzRbsMnTQ) | Coding with John | Video Tutorial | Completed | Verified | High | 2026-09-30 |
+
+
 
 ---
 
@@ -258,6 +264,98 @@ Master catalog tracking all learning sources, courses, tutorials, and documentat
 
 ---
 
+### SRC-009
+- **Domain**: Programming
+- **Topic**: Build Management / Maven
+- **Course**: [Video] Quản lý project Java với Maven
+- **Provider**: TITV
+- **URL**: [https://titv.vn/courses-page/quan-ly-project-java-voi-maven/](https://titv.vn/courses-page/quan-ly-project-java-voi-maven/)
+- **Source Type**: Online Video Course
+- **Status**: Completed
+- **Verification Status**: Verified (6 lessons curriculum verified)
+- **Last Verified**: 2026-09-30
+- **Coverage Confidence**: High
+- **Coverage**:
+  - Maven introduction & Eclipse m2e plugin setup
+  - Creating standard Java Maven projects & GAV coordinates (`groupId`, `artifactId`, `version`)
+  - Standard directory layout (`src/main/java`, `src/test/java`, `target/`)
+  - Declarative dependency management (`<dependencies>`, `<dependency>`)
+  - Java Web project creation with Maven (`war` packaging)
+  - Java Swing GUI project creation with Maven (`jar` packaging)
+  - Multi-module Maven architecture (`<modules>`, `<module>`, parent POM inheritance)
+  - Maven test lifecycle & running automated test cases
+- **Source $\rightarrow$ Knowledge Mapping**:
+  - $\rightarrow$ [`01-programming/maven.md`](../01-programming/maven.md)
+  - $\rightarrow$ [`00-sources/C009-maven-java.md`](./C009-maven-java.md)
+
+---
+
+### SRC-010
+- **Domain**: Programming
+- **Topic**: Java 8 Lambdas
+- **Course**: Biểu thức Lambda cực dễ hiểu
+- **Provider**: Code Thu (YouTube)
+- **URL**: [https://www.youtube.com/watch?v=dKzTdBXgHsg](https://www.youtube.com/watch?v=dKzTdBXgHsg)
+- **Source Type**: Online Video Tutorial
+- **Status**: Completed
+- **Verification Status**: Verified
+- **Last Verified**: 2026-09-30
+- **Coverage Confidence**: High
+- **Coverage**:
+  - Anonymous Classes limitations before Java 8
+  - Lambda expression syntax `(params) -> { body }`
+  - Functional Interfaces and Single Abstract Method (SAM) contracts
+  - Concise syntax for `Runnable` and `Comparator`
+- **Source $\rightarrow$ Knowledge Mapping**:
+  - $\rightarrow$ [`01-programming/java8-streams-lambda.md`](../01-programming/java8-streams-lambda.md)
+  - $\rightarrow$ [`00-sources/C010-java-lambda.md`](./C010-java-lambda.md)
+
+---
+
+### SRC-011
+- **Domain**: Programming
+- **Topic**: Java 8 Streams API
+- **Course**: Java Streams Tutorial Series
+- **Provider**: SDET-QA (Pavan / YouTube)
+- **URL**: [https://www.youtube.com/playlist?list=PLUDwpEzHYYLvTPVqVIt7tlBohABLo4gyg](https://www.youtube.com/playlist?list=PLUDwpEzHYYLvTPVqVIt7tlBohABLo4gyg)
+- **Source Type**: Online Video Playlist
+- **Status**: Completed
+- **Verification Status**: Verified
+- **Last Verified**: 2026-09-30
+- **Coverage Confidence**: High
+- **Coverage**:
+  - Stream computational pipeline vs Collection storage
+  - Intermediate operations: `filter()`, `map()`, `flatMap()`, `distinct()`, `sorted()`, `limit()`
+  - Terminal operations: `collect()`, `count()`, `min()`, `max()`, `reduce()`, `forEach()`
+  - Collectors (`Collectors.toList()`, `Collectors.toSet()`)
+- **Source $\rightarrow$ Knowledge Mapping**:
+  - $\rightarrow$ [`01-programming/java8-streams-lambda.md`](../01-programming/java8-streams-lambda.md)
+  - $\rightarrow$ [`00-sources/C011-java-streams.md`](./C011-java-streams.md)
+
+---
+
+### SRC-012
+- **Domain**: Programming
+- **Topic**: Java 8 Optionals
+- **Course**: Optionals In Java - Simple Tutorial
+- **Provider**: Coding with John (YouTube)
+- **URL**: [https://www.youtube.com/watch?v=vKVzRbsMnTQ](https://www.youtube.com/watch?v=vKVzRbsMnTQ)
+- **Source Type**: Online Video Tutorial
+- **Status**: Completed
+- **Verification Status**: Verified
+- **Last Verified**: 2026-09-30
+- **Coverage Confidence**: High
+- **Coverage**:
+  - Avoiding `NullPointerException` (NPE) in Java
+  - Creating `Optional`: `empty()`, `of()`, `ofNullable()`
+  - Unwrapping methods: `isPresent()`, `isEmpty()`, `orElse()`, `orElseGet()`, `orElseThrow()`
+  - Functional mapping on Optionals (`.map()`, `.filter()`)
+- **Source $\rightarrow$ Knowledge Mapping**:
+  - $\rightarrow$ [`01-programming/java8-streams-lambda.md`](../01-programming/java8-streams-lambda.md)
+  - $\rightarrow$ [`00-sources/C012-java-optional.md`](./C012-java-optional.md)
+
+---
+
 ## 🔄 Knowledge $\rightarrow$ Source Summary Mapping Matrix
 
 | Knowledge Base File | Mapped Source IDs | Primary Contributor | Overlap / Secondary Contributor |
@@ -271,3 +369,7 @@ Master catalog tracking all learning sources, courses, tutorials, and documentat
 | [`04-operating-systems/linux-sysadmin-bash.md`](../04-operating-systems/linux-sysadmin-bash.md) | **SRC-008**, **SRC-005** | **SRC-008** (Linux LPI) | **SRC-005** (OS principles) |
 | [`05-networking/java-network-programming.md`](../05-networking/java-network-programming.md) | **SRC-006** | **SRC-006** (Java Network) | — |
 | [`06-devops-tools/git-github.md`](../06-devops-tools/git-github.md) | **SRC-007** | **SRC-007** (Git & GitHub) | — |
+| [`01-programming/maven.md`](../01-programming/maven.md) | **SRC-009** | **SRC-009** (Maven in Java) | — |
+| [`01-programming/java8-streams-lambda.md`](../01-programming/java8-streams-lambda.md) | **SRC-010**, **SRC-011**, **SRC-012** | **SRC-011** (Streams API) | **SRC-010** (Lambdas), **SRC-012** (Optional) |
+
+

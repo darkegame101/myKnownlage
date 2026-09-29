@@ -24,7 +24,11 @@ myKnownlage/
 │   ├── C005-os-concepts.md           # Course record for OS Principles
 │   ├── C006-java-network.md          # Course record for Java Network Programming
 │   ├── C007-git-github.md            # Course record for Git & GitHub
-│   └── C008-linux-lpi.md             # Course record for Linux (LPI 1-2)
+│   ├── C008-linux-lpi.md             # Course record for Linux (LPI 1-2)
+│   ├── C009-maven-java.md            # Course record for Maven in Java
+│   ├── C010-java-lambda.md           # Course record for Lambda Expressions
+│   ├── C011-java-streams.md          # Course record for Java Streams API
+│   └── C012-java-optional.md         # Course record for Java Optionals
 ├── 00-dashboard/                      # Master dynamic dashboards & analytical reports
 │   ├── knowledge-map.md              # Overall visual & domain knowledge map
 │   ├── skill-matrix.md               # Capability evaluations across 5 dimensions (0-5 scale)
@@ -33,7 +37,9 @@ myKnownlage/
 ├── 01-programming/                    # Java Core & Object-Oriented Programming
 │   ├── summary.md                    # Programming domain summary
 │   ├── java-core.md                  # Java Core syntax, Collections, File I/O, Swing
-│   └── oop-java.md                   # OOP Pillars, UML modeling, interfaces
+│   ├── oop-java.md                   # OOP Pillars, UML modeling, interfaces
+│   ├── maven.md                      # Apache Maven build tool & dependency management
+│   └── java8-streams-lambda.md       # Java 8+ Streams API, Lambdas & Optional
 ├── 02-dsa/                            # Data Structures & Algorithms
 │   ├── summary.md                    # DSA domain summary
 │   └── data-structures-algorithms-java.md # Big O, Arrays, Singly Linked List
@@ -57,7 +63,7 @@ myKnownlage/
 
 ## 🧭 Master Navigation & Dashboards
 
-- 📖 **[Master Learning Sources Registry](00-sources/learning-sources.md)**: Catalog of all learning inputs (`SRC-001` – `SRC-008`) with bidirectional mapping.
+- 📖 **[Master Learning Sources Registry](00-sources/learning-sources.md)**: Catalog of all learning inputs (`SRC-001` – `SRC-012`) with bidirectional mapping.
 - 📚 **[Course Catalog & Index](00-sources/courses.md)**: List of all course records with direct lesson indexes.
 - 🗺️ **[Knowledge Map](00-dashboard/knowledge-map.md)**: Visual diagram and domain level mapping.
 - 📊 **[Skill Matrix](00-dashboard/skill-matrix.md)**: Capability evaluations on a 0–5 scale across Theory, Practical, Troubleshooting, Design, and Confidence.

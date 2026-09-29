@@ -9,9 +9,9 @@ Structured, dependency-driven learning path separating **Backend Development** a
 ```mermaid
 graph TD
     subgraph BACKEND_BRANCH["Backend Development Branch (True Dependency Graph)"]
-        JCORE[Java Core & OOP - Level 3/5] --> MAVEN[Apache Maven - Level 1/5]
-        JCORE --> STREAMS[Java 8+ Streams API - Level 1/5]
-        JCORE --> JUNIT[JUnit 5 & Testing - Level 0/5]
+        JCORE[Java Core & OOP - Level 3/5] --> MAVEN[Apache Maven - Level 3/5]
+        JCORE --> STREAMS[Java 8+ Streams API - Level 3/5]
+        JCORE --> JUNIT[JUnit 5 & Testing - Level 1/5]
         
         MAVEN --> SBOOT_CORE[Spring Boot Core - Level 0/5]
         JCORE --> SBOOT_CORE
@@ -57,15 +57,14 @@ graph TD
 > 💡 **Dependency Note**: Maven, Streams, and JUnit are peer prerequisites branching from Java Core. They are NOT a sequential linear chain. Once Maven and basic testing foundations are set, Spring Boot development can begin. JPA/Hibernate is a follow-on skill, NOT a blocker to starting Spring Boot.
 
 ### Step A.1: Java Foundation Extensions (Parallel Nodes)
-- **Node A.1a: Apache Maven** (Prereq: Java Core 3/5)
-  - *What to Learn*: `pom.xml`, dependency management, plugins, lifecycle (`clean`, `compile`, `test`, `package`).
-  - *Practical Proof*: Package a multi-module Java application into an executable JAR.
-- **Node A.1b: Java 8+ Streams API & Lambdas** (Prereq: Java Core 3/5)
-  - *What to Learn*: Functional Interfaces (`Predicate`, `Function`), Stream pipelines (`map`, `filter`, `reduce`), `Optional`.
-  - *Practical Proof*: Refactor collection processing with Streams pipelines.
-- **Node A.1c: Unit Testing (JUnit 5 & Mockito)** (Prereq: Java Core 3/5, Maven)
+- **Node A.1a: Apache Maven** (Prereq: Java Core 3/5) — **STATUS: COMPLETED (Level 3/5)**
+  - *Evidence*: Completed course [C009 / SRC-009](file:///E:/myKnownlage/00-sources/C009-maven-java.md); configured `pom.xml`, dependency management, web/swing packaging, multi-module POMs, and test execution.
+- **Node A.1b: Java 8+ Streams API & Lambdas** (Prereq: Java Core 3/5) — **STATUS: COMPLETED (Level 3/5)**
+  - *Evidence*: Completed tutorials [C010 / SRC-010](file:///E:/myKnownlage/00-sources/C010-java-lambda.md), [C011 / SRC-011](file:///E:/myKnownlage/00-sources/C011-java-streams.md), and [C012 / SRC-012](file:///E:/myKnownlage/00-sources/C012-java-optional.md); topic documented in [java8-streams-lambda.md](file:///E:/myKnownlage/01-programming/java8-streams-lambda.md).
+- **Node A.1c: Unit Testing (JUnit 5 & Mockito)** (Prereq: Java Core 3/5, Maven) — **STATUS: NEXT UP / GATEWAY TO SPRING BOOT**
   - *What to Learn*: `@Test`, `@ParameterizedTest`, Assertions, Mockito mocks (`@Mock`, `when().thenReturn()`).
   - *Practical Proof*: Write JUnit 5 test suites achieving >80% coverage on service logic.
+
 
 ### Step A.2: Spring Boot Core & REST API
 - **Prerequisites**: Java Core (3/5), Maven (Step A.1a), basic JUnit testing (Step A.1c).

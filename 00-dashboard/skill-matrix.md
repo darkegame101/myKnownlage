@@ -21,10 +21,11 @@ Detailed breakdown of capabilities categorized by level (0 to 5) across theoreti
 | **Java Collections Framework** | **3/5** | 3/5 | 2/5 | 1/5 | 2/5 | Medium | Verified | Standard Collections usage |
 | **Java File I/O & Serialization** | **3/5** | 3/5 | 2/5 | 1/5 | 2/5 | Medium | Verified | Text & Object file scripts |
 | **Java Swing GUI (MVC)** | **3/5** | 3/5 | 3/5 | 2/5 | 2/5 | High | Verified | Student Manager Swing App |
-| **Java 8+ Streams API & Lambdas** | **1/5** | 1/5 | 0/5 | 0/5 | 0/5 | Low | No Evidence | **GAP** — Backend Prerequisite |
-| **Apache Maven Build Tool** | **1/5** | 1/5 | 0/5 | 0/5 | 0/5 | Low | No Evidence | **GAP** — Backend Prerequisite |
-| **JUnit 5 & Mockito Unit Testing** | **0/5** | 0/5 | 0/5 | 0/5 | 0/5 | Low | No Evidence | **GAP** — Backend Prerequisite |
+| **Java 8+ Streams API & Lambdas** | **3/5** | 3/5 | 3/5 | 2/5 | 2/5 | Medium | Verified | C010 (Lambdas), C011 (Streams), C012 (Optional) |
+| **Apache Maven Build Tool** | **3/5** | 3/5 | 3/5 | 2/5 | 2/5 | Medium | Verified | Course C009 verified; pom.xml, multi-module & tests |
+| **JUnit 5 & Mockito Unit Testing** | **1/5** | 1/5 | 1/5 | 0/5 | 0/5 | Low | Partial | **GAP** — Partial Maven test runner exposure (C009) |
 | **Arrays & Singly Linked List (DSA)**| **2/5** | 3/5 | 2/5 | 1/5 | 1/5 | Medium | Verified | Custom Linked List Student Manager |
+
 | **Trees, Graphs & Advanced Sorting** | **0/5** | 0/5 | 0/5 | 0/5 | 0/5 | Low | No Evidence | **GAP** — CS Fundamentals |
 | **SQL Server Querying & Joins** | **3/5** | 3/5 | 3/5 | 2/5 | 2/5 | High | Verified | Multi-table JOIN queries |
 | **SQL Subqueries, CTE & Window Func**| **3/5** | 3/5 | 3/5 | 2/5 | 2/5 | High | Verified | Complex SQL practice queries |
