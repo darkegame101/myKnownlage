@@ -12,6 +12,8 @@ Detailed breakdown of capabilities categorized by level (0 to 5) across theoreti
 
 ---
 
+> 💡 **Project Evidence Assessment**: Skill scores are dynamically validated and updated based on concrete project evidence. See [`00-projects/project-registry.md`](../00-projects/project-registry.md) for assessment instruments and [`00-projects/project-log.md`](../00-projects/project-log.md) for audit logs.
+
 ## Multidimensional Skill Level Ratings
 
 | Skill / Domain Area | Overall | Theory | Practical | Troubleshooting | Design | Confidence | Evidence Status | Status / Notes |
@@ -39,8 +41,12 @@ Detailed breakdown of capabilities categorized by level (0 to 5) across theoreti
 | **Linux System Programming** | **0/5** | 1/5 | 0/5 | 0/5 | 0/5 | Low | No Evidence | **GAP** — `fork`, `exec`, `epoll` |
 | **Linux Network Namespaces & Bridges**| **1/5** | 1/5 | 0/5 | 0/5 | 0/5 | Low | No Evidence | **GAP** — Container Prerequisite |
 | **Java TCP & UDP Socket Apps** | **3/5** | 3/5 | 3/5 | 2/5 | 2/5 | High | Verified | Chat Room, Remote Desktop apps |
+| **Web Protocols (HTTP/TLS/QUIC)**| **2/5** | 3/5 | 1/5 | 1/5 | 2/5 | Medium | Partial | TLS 1.3, ECDHE, CA Trust, QUIC vs TCP/UDP |
 | **Computer Networking Infrastructure**| **1/5** | 2/5 | 1/5 | 0/5 | 0/5 | Low | Partial | **GAP** — CIDR, ARP, NAT, Wireshark |
 | **Git Version Control CLI** | **4/5** | 4/5 | 4/5 | 3/5 | 3/5 | High | Verified | Branching, rebasing, merge fix |
 | **GitHub Collaboration & PR Workflow**| **4/5** | 4/5 | 4/5 | 3/5 | 3/5 | High | Verified | Fork, Clone, Push, PR workflow |
 | **GitHub Actions CI/CD Automation** | **0/5** | 1/5 | 0/5 | 0/5 | 0/5 | Low | No Evidence | **GAP** — CI/CD Pipeline |
 | **Docker & Containerization** | **0/5** | 1/5 | 0/5 | 0/5 | 0/5 | Low | No Evidence | **GAP** — Containerization |
+| **LLM Foundations & Limitations** | **3/5** | 3/5 | 2/5 | 1/5 | 2/5 | Medium | Partial | C014; prompt, cutoff, hallucination |
+| **RAG Architecture & Vector Search** | **2/5** | 3/5 | 2/5 | 1/5 | 2/5 | Medium | Partial | C013, C014; Chunking, Embeddings, Vector DB |
+| **Agentic RAG & Multi-step Reasoning** | **2/5** | 3/5 | 1/5 | 1/5 | 2/5 | Medium | Partial | C014; agent loops, reflection, tool calling |

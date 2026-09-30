@@ -105,3 +105,40 @@ No dashboard file may contain data that contradicts topic files or domain summar
 - **Database Model (`03-databases/`)**: Explicitly track backend database gaps in `gap-analysis.md`: Transactions, ACID, COMMIT/ROLLBACK, Isolation Levels, Locks, Deadlocks, Concurrency Control, MVCC, Execution Plans, Connection Pooling (HikariCP), Database Performance Tuning.
 - **DSA Model (`02-dsa/`)**: Focus on Backend Fundamentals (Big-O, Array, Linked List, Stack, Queue, Hash Table, Tree, Heap, Graph, Binary Search, Sorting, Recursion). Do NOT frame as competitive programming / LeetCode grinding tracker.
 - **DevOps Model (`06-devops-tools/`)**: Distinguish Version Control (`Git/GitHub`) from CI/CD (`GitHub Actions`), Docker, IaC, Cloud, Kubernetes, Observability. GitHub Actions is CI/CD, not Git fundamentals.
+
+---
+
+## 🏗️ 7. PROJECT EVIDENCE ASSESSMENT SYSTEM
+
+Projects in this repository are **assessment instruments**, not merely showcase portfolios.
+
+### Core Philosophy
+1. Course completion $\neq$ Mastery.
+2. Having a project $\neq$ Technical competence.
+3. README statement $\neq$ Evidence.
+4. Project completed $\neq$ All skills inside the project are mastered.
+5. Evidence must be extracted solely from what physically exists in the repository, code, tests, Git history, and diagnostic artifacts.
+
+### The Assessment Flow
+`Learning Source` $\rightarrow$ `Knowledge Base` $\rightarrow$ `Project Instrument` $\rightarrow$ `Project Submission` $\rightarrow$ `AI Review` $\rightarrow$ `Evidence Extraction` $\rightarrow$ `Skill Assessment` $\rightarrow$ `Knowledge Update` $\rightarrow$ `Gap Analysis` $\rightarrow$ `Roadmap Synchronization`
+
+### AI Review Execution Rules
+When the user submits a project in the format:
+```text
+[PROJECT_ID] https://github.com/username/project commit: [SHA]
+```
+The AI Maintainer must immediately treat this as an automated evaluation command:
+1. **Inspection Priority**:
+   1. Repository structure & build configs (`pom.xml`, `docker-compose.yml`, etc.)
+   2. Source code implementation (logic, error handling, thread safety)
+   3. Automated tests & assertions (JUnit 5, integration tests)
+   4. Git commit history (atomic commits, rebase, branch hygiene)
+   5. CI/CD automation (`.github/workflows`)
+   6. Diagnostic artifacts (logs, execution plans, `.pcapng` traces, thread dumps)
+   7. Documentation & README (evaluated last; claims in README are NOT evidence until verified in code)
+2. **If a claim cannot be verified**: Record `Not Verified`. Never convert an unproven claim into competency evidence.
+3. **If repository is inaccessible**: Record `Evidence Status = Not Verified` and state the access limitation clearly.
+4. **Produce Standard Review Output**: Generate the canonical Project Assessment Report defined in [`00-projects/README.md`](file:///E:/myKnownlage/00-projects/README.md).
+5. **Traceability Rule**: Every verified claim must reference `[Project ID] / [File Path]:[Line Range]` and state explicitly what it proves and what it does **NOT** prove.
+6. **Score Updates**: Only update scores in [`00-dashboard/skill-matrix.md`](file:///E:/myKnownlage/00-dashboard/skill-matrix.md) if supported by verified evidence. Never bump Theory or Design scores if only a Practical implementation was demonstrated. Always log Before/After changes in [`00-projects/project-log.md`](file:///E:/myKnownlage/00-projects/project-log.md).
+

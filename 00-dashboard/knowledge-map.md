@@ -12,6 +12,7 @@ graph TD
     KB --> OS[04. Operating Systems & Linux]
     KB --> NET[05. Networking & Network Programming]
     KB --> DEV[06. DevOps Tools: Git & GitHub]
+    KB --> AI[07. AI Engineering: LLM & RAG Pipelines]
 
     PROG --> P1[Java Core Syntax & Control Flow - Level 3/5]
     PROG --> P2[OOP Pillars & UML Modeling - Level 3/5]
@@ -37,11 +38,16 @@ graph TD
 
     NET --> N1[Java TCP/UDP Socket Programming - Level 3/5]
     NET --> N2[Java Multicast & RMI - Level 3/5]
-    NET --> N3[Computer Networking Infra: CIDR/NAT/Wireshark - Level 1/5]
+    NET --> N3[Web Protocols: HTTP/TLS 1.3/QUIC - Level 2/5]
+    NET --> N4[Computer Networking Infra: CIDR/NAT/Wireshark - Level 1/5]
 
     DEV --> G1[Git CLI Version Control Workflow - Level 4/5]
     DEV --> G2[GitHub Collaboration, Forking & PRs - Level 4/5]
     DEV --> G3[GitHub Actions CI/CD Workflows - Level 0/5]
+
+    AI --> AI1[LLM Foundations & Limitations - Level 3/5]
+    AI --> AI2[RAG Architecture & Vector Search - Level 2/5]
+    AI --> AI3[Agentic RAG & Multi-step Reasoning - Level 2/5]
 ```
 
 ---
@@ -65,9 +71,13 @@ graph TD
 | | Linux SysAdmin & Bash Automation | 3/5 | 3/5 | 2/5 | **3/5** | [`SRC-008`](../00-sources/learning-sources.md#src-008) |
 | | Linux System Programming (`fork`/`epoll`) | 1/5 | 0/5 | 0/5 | **0/5** | *Tracked Gap* |
 | [`05-networking/`](../05-networking/summary.md) | Java Network Socket Programming | 3/5 | 3/5 | 2/5 | **3/5** | [`SRC-006`](../00-sources/learning-sources.md#src-006) |
+| | Web Protocols & Security (HTTP/TLS/QUIC) | 3/5 | 1/5 | 1/5 | **2/5** | *Self-Study Consolidation* |
 | | Computer Networking Infrastructure | 2/5 | 1/5 | 0/5 | **1/5** | *Tracked Gap* |
 | [`06-devops-tools/`](../06-devops-tools/summary.md) | Version Control (Git CLI & GitHub PRs) | 4/5 | 4/5 | 3/5 | **4/5** | [`SRC-007`](../00-sources/learning-sources.md#src-007) |
 | | CI/CD Automation (GitHub Actions) | 1/5 | 0/5 | 0/5 | **0/5** | *Tracked Gap* |
+| [`07-ai-engineering/`](../07-ai-engineering/summary.md) | LLM Foundations & Limitations | 3/5 | 2/5 | 1/5 | **3/5** | [`SRC-014`](../00-sources/learning-sources.md#src-014) |
+| | RAG Architecture & Vector Search | 3/5 | 2/5 | 1/5 | **2/5** | [`SRC-013`](../00-sources/learning-sources.md#src-013) |
+| | Agentic RAG & Multi-step Reasoning | 3/5 | 1/5 | 1/5 | **2/5** | [`SRC-014`](../00-sources/learning-sources.md#src-014) |
 
 ---
 

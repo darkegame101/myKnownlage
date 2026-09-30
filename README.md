@@ -14,7 +14,7 @@ myKnownlage/
 ├── AGENTS.md                          # Master Agent instructions & repository rules
 ├── README.md                          # Repository overview & entry point index
 ├── 00-sources/                        # Master source registry & course records
-│   ├── learning-sources.md           # Master Learning Sources Registry (SRC-001 - SRC-008)
+│   ├── learning-sources.md           # Master Learning Sources Registry (SRC-001 - SRC-014)
 │   ├── courses.md                    # Course Catalog & Index
 │   ├── rules.md                      # Source Processing & Knowledge Base Expansion rules
 │   ├── C001-java-core.md             # Course record for Java Core
@@ -28,12 +28,25 @@ myKnownlage/
 │   ├── C009-maven-java.md            # Course record for Maven in Java
 │   ├── C010-java-lambda.md           # Course record for Lambda Expressions
 │   ├── C011-java-streams.md          # Course record for Java Streams API
-│   └── C012-java-optional.md         # Course record for Java Optionals
+│   ├── C012-java-optional.md         # Course record for Java Optionals
+│   ├── C013-rag-fundamentals.md      # Course record for RAG Fundamentals
+│   └── C014-llm-rag-agentic.md       # Course record for LLM & Agentic RAG
 ├── 00-dashboard/                      # Master dynamic dashboards & analytical reports
 │   ├── knowledge-map.md              # Overall visual & domain knowledge map
 │   ├── skill-matrix.md               # Capability evaluations across 5 dimensions (0-5 scale)
 │   ├── gap-analysis.md               # Detailed report on missing knowledge & prerequisite gaps
 │   └── learning-roadmap.md           # Dependency-based dual-branch roadmap
+├── 00-projects/                       # Project Evidence Assessment System
+│   ├── README.md                     # Assessment system architecture & AI review workflow
+│   ├── assessment-rubric.md          # 0-5 grading rubric & domain boundary matrices
+│   ├── project-registry.md           # Master registry of assessment projects (P001-P006, P-HIST)
+│   ├── project-log.md                # Chronological audit trail & review history
+│   ├── P001-java-library-server.md   # Concurrency & socket library server instrument
+│   ├── P002-database-concurrency-lab.md # ACID, isolation levels & deadlock lab instrument
+│   ├── P003-network-packet-investigation.md # Wireshark, TCP handshake & CIDR instrument
+│   ├── P004-linux-diagnostics.md     # Linux processes, strace & network namespaces instrument
+│   ├── P005-git-ci-assessment.md     # Git rebase, merge conflicts & GitHub Actions CI instrument
+│   └── P006-docker-networking-lab.md # Docker bridge, iptables NAT & Linux primitives instrument
 ├── 01-programming/                    # Java Core & Object-Oriented Programming
 │   ├── summary.md                    # Programming domain summary
 │   ├── java-core.md                  # Java Core syntax, Collections, File I/O, Swing
@@ -53,22 +66,28 @@ myKnownlage/
 │   └── linux-sysadmin-bash.md        # Linux CLI, FHS hierarchy, permissions, Bash scripts
 ├── 05-networking/                     # Computer Networking & Network Programming
 │   ├── summary.md                    # Networking domain summary
-│   └── java-network-programming.md   # Java TCP/UDP Sockets, Chat app, Remote Desktop
-└── 06-devops-tools/                   # Version Control & Development Tools
-    ├── summary.md                    # DevOps tools domain summary
-    └── git-github.md                 # Git CLI, branching, rebasing, GitHub PR workflow
+│   ├── java-network-programming.md   # Java TCP/UDP Sockets, Chat app, Remote Desktop
+│   └── http-tls-quic.md              # HTTP, TLS 1.3, ECDHE, CA trust chain, QUIC & HTTP/3
+├── 06-devops-tools/                   # Version Control & Development Tools
+│   ├── summary.md                    # DevOps tools domain summary
+│   └── git-github.md                 # Git CLI, branching, rebasing, GitHub PR workflow
+└── 07-ai-engineering/                 # AI Engineering & LLM Applications
+    ├── summary.md                    # AI Engineering domain summary
+    └── llm-rag-fundamentals.md       # LLM, RAG Pipelines & Agentic RAG
 ```
 
 ---
 
 ## 🧭 Master Navigation & Dashboards
 
-- 📖 **[Master Learning Sources Registry](00-sources/learning-sources.md)**: Catalog of all learning inputs (`SRC-001` – `SRC-012`) with bidirectional mapping.
+- 📖 **[Master Learning Sources Registry](00-sources/learning-sources.md)**: Catalog of all learning inputs (`SRC-001` – `SRC-014`) with bidirectional mapping.
 - 📚 **[Course Catalog & Index](00-sources/courses.md)**: List of all course records with direct lesson indexes.
 - 🗺️ **[Knowledge Map](00-dashboard/knowledge-map.md)**: Visual diagram and domain level mapping.
 - 📊 **[Skill Matrix](00-dashboard/skill-matrix.md)**: Capability evaluations on a 0–5 scale across Theory, Practical, Troubleshooting, Design, and Confidence.
 - 🔍 **[Gap Analysis](00-dashboard/gap-analysis.md)**: Detailed report on missing knowledge, practical gaps, and prerequisite blockers.
 - 🚀 **[Learning Roadmap](00-dashboard/learning-roadmap.md)**: Dependency-based dual-branch roadmap for Backend Development and Systems/DevOps.
+- 🧪 **[Project Assessment System](00-projects/README.md)**: Assessment instruments (`P001`–`P006`), rubrics, submission flow, and verified project evidence.
+- 📋 **[Project Registry](00-projects/project-registry.md)**: Master index of planned, in-progress, and verified assessment projects.
 
 ---
 

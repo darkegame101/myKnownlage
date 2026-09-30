@@ -2,9 +2,9 @@
 
 ## Current Level Assessment
 - **Java Network Socket Programming**: 3/5 (Theory: 3/5, Practical: 3/5, Troubleshooting: 2/5, Design: 2/5) — *Verified via Java Chat Room & Remote Desktop projects.*
-- **Computer Networking Infrastructure**: 1/5 (Theory: 2/5, Practical: 1/5, Troubleshooting: 0/5, Design: 0/5) — *Unverified / Major Gap.*
+- **Computer Networking Infrastructure & Protocols**: 2/5 (Theory: 3/5, Practical: 1/5, Troubleshooting: 1/5, Design: 2/5) — *Evidence: Partial (Theory of TLS 1.3, ECDHE, QUIC, HTTP/3 consolidated; packet capture & routing lab pending P003).*
 
-> ⚠️ **Critical Distinction**: Completing Java Network Socket Programming (`Socket`, `ServerSocket`, `DatagramPacket`) does **NOT** equal mastering Computer Networking Infrastructure (CIDR Subnetting, ARP, Routing, NAT, IP Forwarding, Wireshark packet capture, TLS handshakes).
+> ⚠️ **Critical Distinction**: Completing Java Network Socket Programming (`Socket`, `ServerSocket`, `DatagramPacket`) does **NOT** equal mastering Computer Networking Infrastructure (CIDR Subnetting, ARP, Routing, NAT, IP Forwarding, Wireshark packet capture).
 
 ---
 
@@ -19,12 +19,31 @@
 - Java Multicast Programming (`MulticastSocket`), Lightstick controller simulation.
 - Java Remote Method Invocation (RMI) distributed objects introduction.
 
-### 2. Computer Networking Infrastructure (Tracking / Unverified Gaps)
+### 2. Web Protocols, TLS Security & Modern Transport (Consolidated Theory — Level 3/5)
+- **HTTP, HTTPS & TLS Fundamentals**:
+  - HTTP request/response model; HTTPS as HTTP over TLS.
+  - The 4 core responsibilities of TLS: Authentication, Key exchange, Encryption, Integrity.
+  - Why HTTPS does not simply use public key encryption for bulk HTTP data (asymmetric overhead vs symmetric session keys).
+- **TLS 1.3 Handshake & Cryptographic Mechanics**:
+  - Handshake flow: `ClientHello` + Key Share $\rightarrow$ `ServerHello`, `Certificate`, `CertificateVerify`, `Finished`.
+  - Server Certificate structure (Domain, Public Key, Validity, CA Signature); Private Key secrecy.
+  - CA Trust Store verification chain (Root CA $\rightarrow$ Intermediate CA $\rightarrow$ Server Certificate).
+  - Difference between `Certificate` (identity claim) and `CertificateVerify` (proof of private key ownership via transcript signing).
+  - Elliptic Curve Diffie-Hellman Ephemeral (ECDHE): deriving identical shared secret without transmitting secrets over the wire.
+  - Symmetric bulk encryption: AES-GCM and ChaCha20-Poly1305 using derived Session Keys.
+- **Java HTTPS via JSSE**:
+  - `KeyStore`, `SSLContext`, `SSLServerSocket`, `SSLSocket`.
+  - Application-level transparency: application receives decrypted plaintext HTTP requests.
+- **HTTP Protocol Evolution & QUIC**:
+  - HTTP/1.1 (TCP, text headers, Head-of-Line blocking) vs HTTP/2 (binary framing, multiplexing streams over 1 TCP connection).
+  - HTTP/3 over QUIC over UDP: eliminating TCP Head-of-Line blocking between streams.
+  - TCP 4-tuple identification vs QUIC 64-bit Connection ID.
+  - QUIC Connection Migration: seamless network switching (Wi-Fi $\rightarrow$ 4G/5G) without connection drops.
+
+### 3. Computer Networking Infrastructure (Tracking / Unverified Gaps)
 - **Layer 2 (Data Link)**: Ethernet, MAC Addressing, ARP (`arp -a`) — *Concept 1/5, Practical 0/5*.
 - **Layer 3 (Network)**: IPv4 Address structure, CIDR Subnetting (`/24`, `/16`), Routing tables, NAT (Network Address Translation), DHCP, ICMP (`ping`, `traceroute`) — *Concept 2/5, Practical 1/5*.
-- **Layer 4 (Transport)**: TCP 3-Way Handshake, Sequence/ACK numbers, Retransmission timeouts, Window scaling, UDP headers — *Concept 2/5, Practical 1/5 (Socket API level only)*.
-- **Layer 7 (Application)**: DNS lookup mechanisms, HTTP/1.1 methods, HTTPS & TLS/SSL handshakes — *Concept 2/5, Practical 1/5*.
-- **Network Diagnostics & Tools**: Wireshark, `tcpdump`, `nc` (netcat), `nmap` — *Unverified / No Evidence (0/5)*.
+- **Network Diagnostics & Tools**: Wireshark, `tcpdump`, `nc` (netcat), `nmap` — *Unverified / No Evidence (0/5)* (Target of [`P003`](../00-projects/P003-network-packet-investigation.md)).
 
 ---
 

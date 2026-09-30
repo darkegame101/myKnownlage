@@ -23,6 +23,8 @@ graph TD
         REST --> SSEC[Spring Security & JWT - Level 0/5]
         SBOOT_CORE --> REDIS[Redis Caching - Level 0/5]
         SBOOT_CORE --> KAFKA[Kafka Event Streaming - Level 0/5]
+        SBOOT_CORE --> SPRING_AI[Spring AI & RAG Integration - Level 0/5]
+        RAG_THEORY[LLM & RAG Fundamentals - Level 2/5] --> SPRING_AI
     end
 
     subgraph SYSTEMS_BRANCH["Systems / DevOps Branch"]
@@ -64,22 +66,29 @@ graph TD
 - **Node A.1c: Unit Testing (JUnit 5 & Mockito)** (Prereq: Java Core 3/5, Maven) — **STATUS: NEXT UP / GATEWAY TO SPRING BOOT**
   - *What to Learn*: `@Test`, `@ParameterizedTest`, Assertions, Mockito mocks (`@Mock`, `when().thenReturn()`).
   - *Practical Proof*: Write JUnit 5 test suites achieving >80% coverage on service logic.
+  - *Milestone Assessment Instrument*: [`P001: Java Multi-user Library Server`](../00-projects/P001-java-library-server.md) (Validates thread pools, concurrency guards, and automated JUnit 5 tests).
 
 
 ### Step A.2: Spring Boot Core & REST API
 - **Prerequisites**: Java Core (3/5), Maven (Step A.1a), basic JUnit testing (Step A.1c).
 - **What to Learn**: Dependency Injection (IoC Container), Spring Web MVC (`@RestController`, `@GetMapping`, `@PostMapping`), Request lifecycle, Exception handling (`@RestControllerAdvice`).
-- **Practical Proof**: Build a RESTful Web API for product catalog management.
+- **Practical Proof*: Build a RESTful Web API for product catalog management.
 
 ### Step A.3: Spring Data JPA & Database Persistence
 - **Prerequisites**: Spring Boot Core (Step A.2), SQL & JDBC foundations (Level 3/5).
 - **What to Learn**: `@Entity`, `@Table`, `JpaRepository`, HikariCP connection pool configuration, Transaction management (`@Transactional`).
 - **Practical Proof**: Integrate Spring Boot app with SQL Server using Spring Data JPA.
+- **Milestone Assessment Instrument**: [`P002: Database Transaction & Concurrency Lab`](../00-projects/P002-database-concurrency-lab.md) (Validates explicit transactions, isolation levels, deadlocks, and connection pooling).
 
 ### Step A.4: Advanced Backend Services
 - **Spring Security & JWT**: Authentication, authorization, stateless JWT token filters.
 - **Redis Caching**: In-memory caching, cache eviction strategies (`@Cacheable`).
 - **Kafka Event Streaming**: Producer, Consumer, Topic partitions, event-driven messaging.
+
+### Step A.5: AI Engineering & Spring AI Integration (Elective Extension)
+- **Prerequisites**: Spring Boot Core (Step A.2), LLM & RAG Fundamentals ([07-ai-engineering/](file:///E:/myKnownlage/07-ai-engineering/summary.md) - Level 2/5).
+- **What to Learn**: Spring AI client starters (`spring-ai-openai`, `spring-ai-ollama`), `VectorStore` interface (PGVector, Chroma), ETL pipeline for document readers/chunking, prompt templates, and tool/function calling with Java beans.
+- **Practical Proof**: Build a Spring Boot REST API providing grounded semantic search and QA over a proprietary document set.
 
 ---
 
@@ -89,21 +98,29 @@ graph TD
 
 ### Step B.1: Computer Networking Infrastructure (CIDR & Diagnostics)
 - **Prerequisites**: OS Concepts (Level 3/5), Linux CLI (Level 3/5).
+- **Current Status**: **IN PROGRESS (Theory: 3/5, Practical: 1/5)**
+  - *Consolidated Theory*: HTTP/1.1, HTTP/2, HTTP/3, TLS 1.3 Handshake, CertificateVerify, ECDHE, and QUIC Connection Migration documented in [http-tls-quic.md](file:///E:/myKnownlage/05-networking/http-tls-quic.md).
+  - *Remaining Gaps to Close*: Layer 2/3 (Ethernet, MAC, ARP, IPv4, CIDR Subnetting, Routing tables, NAT) and Wireshark diagnostics.
 - **Why Needed**: Foundation for container networking, cloud VPCs, and network troubleshooting.
-- **What to Learn**: OSI/TCP-IP layers, Ethernet, MAC, ARP, IPv4, CIDR Subnetting (`/24`, `/16`), Routing tables (`ip route`), NAT, ICMP, Wireshark, `tcpdump`.
-- **Practical Proof**: Perform Wireshark packet captures of TCP 3-way handshakes and calculate CIDR subnets.
+- **What to Learn Next**: CIDR Subnetting (`/24`, `/16`), Routing tables (`ip route`), NAT, ICMP, Wireshark, `tcpdump`.
+- **Practical Proof**: Perform Wireshark packet captures of TCP 3-way handshakes, TLS negotiation, and calculate CIDR subnets.
+- **Milestone Assessment Instrument**: [`P003: Network Packet Investigation Lab`](../00-projects/P003-network-packet-investigation.md) (Validates Wireshark `.pcapng` analysis, TCP handshake, DNS, and CIDR math).
 
 ### Step B.2: Linux Network Namespaces & Virtual Bridges
 - **Prerequisites**: Linux SysAdmin (Level 3/5), Computer Networking Fundamentals (Step B.1).
 - **Why Needed**: Direct prerequisite for understanding Docker bridge networks and port forwarding mechanisms.
 - **What to Learn**: `ip netns` (network namespaces), virtual ethernet pairs (`veth`), Linux Bridge interfaces (`ip link add br0 type bridge`), `iptables` NAT masquerading.
 - **Practical Proof**: Script the creation of 2 isolated network namespaces connected via a virtual Linux bridge with NAT internet access.
+- **Milestone Assessment Instrument**: [`P004: Linux Process & Network Diagnostics`](../00-projects/P004-linux-diagnostics.md) (Validates `strace`, `/proc`, `systemd`, and `veth` cross-namespace ping).
 
 ### Step B.3: Docker Containerization & Docker Networking
 - **Prerequisites**: Linux CLI (Level 3/5), Linux Network Namespaces (Step B.2).
 - **Why Needed**: Essential technology for packaging microservices into container images.
 - **What to Learn**: Docker Engine, `Dockerfile` multi-stage builds, Docker volumes, Docker Compose (`docker-compose.yml`), custom bridge networks.
 - **Practical Proof**: Containerize a Java backend application and SQL database using Docker Compose.
+- **Milestone Assessment Instruments**: 
+  - [`P005: Git Engineering Workflow + CI`](../00-projects/P005-git-ci-assessment.md) (Validates CI/CD test gates).
+  - [`P006: Docker Networking Lab`](../00-projects/P006-docker-networking-lab.md) (Validates `iptables` DNAT, port publishing, and container DNS).
 
 ---
 

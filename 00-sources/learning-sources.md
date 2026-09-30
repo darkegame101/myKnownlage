@@ -20,6 +20,9 @@ Master catalog tracking all learning sources, courses, tutorials, and documentat
 | **SRC-010** | Programming | Java 8 Lambdas | [Biểu thức Lambda cực dễ hiểu](https://www.youtube.com/watch?v=dKzTdBXgHsg) | Code Thu | Video Tutorial | Completed | Verified | High | 2026-09-30 |
 | **SRC-011** | Programming | Java 8 Streams API | [Java Streams Tutorial Series](https://www.youtube.com/playlist?list=PLUDwpEzHYYLvTPVqVIt7tlBohABLo4gyg) | SDET-QA | Video Playlist | Completed | Verified | High | 2026-09-30 |
 | **SRC-012** | Programming | Java 8 Optionals | [Optionals In Java - Simple Tutorial](https://www.youtube.com/watch?v=vKVzRbsMnTQ) | Coding with John | Video Tutorial | Completed | Verified | High | 2026-09-30 |
+| **SRC-013** | AI Engineering | RAG Fundamentals | [Tất tần tật về RAG cơ bản trong 20 phút](https://www.youtube.com/watch?v=NQOYXmZxqvI) | Việt Nguyễn AI | Video Lecture | Completed | Verified | High | 2026-09-30 |
+| **SRC-014** | AI Engineering | LLM & Agentic RAG | [Understanding LLM, RAG and Agentic RAG](https://www.youtube.com/watch?v=waesmuwRT0c) | Việt Nguyễn AI | Video Lecture | Completed | Verified | High | 2026-09-30 |
+
 
 
 
@@ -356,6 +359,51 @@ Master catalog tracking all learning sources, courses, tutorials, and documentat
 
 ---
 
+### SRC-013
+- **Domain**: AI Engineering
+- **Topic**: RAG Fundamentals & Architecture
+- **Course**: Tất tần tật về RAG cơ bản trong 20 phút
+- **Provider**: Việt Nguyễn AI (YouTube)
+- **URL**: [https://www.youtube.com/watch?v=NQOYXmZxqvI](https://www.youtube.com/watch?v=NQOYXmZxqvI)
+- **Source Type**: Online Video Lecture
+- **Status**: Completed
+- **Verification Status**: Verified
+- **Last Verified**: 2026-09-30
+- **Coverage Confidence**: High
+- **Coverage**:
+  - Inherent limitations of pure LLM (hallucination, static knowledge cutoff)
+  - Definition and core architecture of RAG
+  - Ingestion Pipeline: Document loading, chunking, embedding, vector storage
+  - Retrieval & Generation Pipeline: Query vectorization, semantic search (Cosine Similarity), prompt augmentation, grounded generation
+  - Vector DB concept and architectural trade-offs
+- **Source $\rightarrow$ Knowledge Mapping**:
+  - $\rightarrow$ [`07-ai-engineering/llm-rag-fundamentals.md`](../07-ai-engineering/llm-rag-fundamentals.md)
+  - $\rightarrow$ [`00-sources/C013-rag-fundamentals.md`](./C013-rag-fundamentals.md)
+
+---
+
+### SRC-014
+- **Domain**: AI Engineering
+- **Topic**: LLM, RAG and Agentic RAG
+- **Course**: Introduction: Understanding LLM, RAG and Agentic RAG in 15 Minutes
+- **Provider**: Việt Nguyễn AI (YouTube)
+- **URL**: [https://www.youtube.com/watch?v=waesmuwRT0c](https://www.youtube.com/watch?v=waesmuwRT0c)
+- **Source Type**: Online Video Lecture
+- **Status**: Completed
+- **Verification Status**: Verified
+- **Last Verified**: 2026-09-30
+- **Coverage Confidence**: High
+- **Coverage**:
+  - Paradigm evolution: Pure LLM $\rightarrow$ Naive RAG $\rightarrow$ Advanced RAG $\rightarrow$ Agentic RAG
+  - Failure points of Naive RAG (poor retrieval quality, static lookup)
+  - Agentic RAG architecture: Autonomous agent loop, planning, reflection/evaluation, tool calling, query rewriting
+  - Architectural comparison and selection criteria for software engineers
+- **Source $\rightarrow$ Knowledge Mapping**:
+  - $\rightarrow$ [`07-ai-engineering/llm-rag-fundamentals.md`](../07-ai-engineering/llm-rag-fundamentals.md)
+  - $\rightarrow$ [`00-sources/C014-llm-rag-agentic.md`](./C014-llm-rag-agentic.md)
+
+---
+
 ## 🔄 Knowledge $\rightarrow$ Source Summary Mapping Matrix
 
 | Knowledge Base File | Mapped Source IDs | Primary Contributor | Overlap / Secondary Contributor |
@@ -371,5 +419,7 @@ Master catalog tracking all learning sources, courses, tutorials, and documentat
 | [`06-devops-tools/git-github.md`](../06-devops-tools/git-github.md) | **SRC-007** | **SRC-007** (Git & GitHub) | — |
 | [`01-programming/maven.md`](../01-programming/maven.md) | **SRC-009** | **SRC-009** (Maven in Java) | — |
 | [`01-programming/java8-streams-lambda.md`](../01-programming/java8-streams-lambda.md) | **SRC-010**, **SRC-011**, **SRC-012** | **SRC-011** (Streams API) | **SRC-010** (Lambdas), **SRC-012** (Optional) |
+| [`07-ai-engineering/llm-rag-fundamentals.md`](../07-ai-engineering/llm-rag-fundamentals.md) | **SRC-013**, **SRC-014** | **SRC-013** (RAG Architecture) | **SRC-014** (Agentic RAG) |
+
 
 

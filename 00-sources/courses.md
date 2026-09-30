@@ -2,7 +2,7 @@
 
 Comprehensive catalog of all learning sources, courses, curriculum maps, and resulting skill contributions to the Knowledge Base.
 
-> 💡 **Master Source Registry**: See [`00-sources/learning-sources.md`](./learning-sources.md) for complete Source IDs (SRC-001 – SRC-012) and bidirectional mapping.
+> 💡 **Master Source Registry**: See [`00-sources/learning-sources.md`](./learning-sources.md) for complete Source IDs (SRC-001 – SRC-014) and bidirectional mapping.
 
 ---
 
@@ -22,5 +22,8 @@ Comprehensive catalog of all learning sources, courses, curriculum maps, and res
 | **C010** | **SRC-010** | [Biểu thức Lambda trong Java](./C010-java-lambda.md) | Code Thu | Completed | [youtube.com](https://www.youtube.com/watch?v=dKzTdBXgHsg) | 3/5 | 3/5 | 2/5 | 2/5 |
 | **C011** | **SRC-011** | [Java Streams API Tutorial](./C011-java-streams.md) | SDET-QA | Completed | [youtube.com](https://www.youtube.com/playlist?list=PLUDwpEzHYYLvTPVqVIt7tlBohABLo4gyg) | 3/5 | 3/5 | 2/5 | 2/5 |
 | **C012** | **SRC-012** | [Optionals In Java](./C012-java-optional.md) | Coding with John | Completed | [youtube.com](https://www.youtube.com/watch?v=vKVzRbsMnTQ) | 3/5 | 3/5 | 2/5 | 2/5 |
+| **C013** | **SRC-013** | [Tất tần tật về RAG cơ bản trong 20 phút](./C013-rag-fundamentals.md) | Việt Nguyễn AI | Completed | [youtube.com](https://www.youtube.com/watch?v=NQOYXmZxqvI) | 3/5 | 2/5 | 1/5 | 2/5 |
+| **C014** | **SRC-014** | [Understanding LLM, RAG and Agentic RAG](./C014-llm-rag-agentic.md) | Việt Nguyễn AI | Completed | [youtube.com](https://www.youtube.com/watch?v=waesmuwRT0c) | 3/5 | 2/5 | 1/5 | 2/5 |
+
 
 
